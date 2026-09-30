@@ -1,10 +1,12 @@
 """
-CANT Hero Pose Extraction Pipeline
-Extracts clean, de-fringed transparent hero assets from reference/Final_Pose_Library.jpg
+CANT 5K Master Hero Pose Extraction Pipeline
+Extracts clean, de-fringed transparent hero assets from reference/Final_Pose_Library_5K.jpg
 Outputs to public/hero/{pose_id}/:
-  - figure.webp      (1600px tall master)
-  - figure@1080.webp (1080px tall display variant)
-  - mask.webp        (8px dilated silhouette mask)
+  - figure.webp        (2000px tall master)
+  - figure@1080.webp   (1200px tall display variant)
+  - figure_waist.webp  (1200px tall dynamic zoom waist crop)
+  - mask.webp          (8px dilated silhouette mask)
+  - mask_waist.webp    (8px dilated silhouette mask for waist crop)
 And updates public/hero/manifest.json.
 """
 
@@ -13,7 +15,7 @@ import sys
 import json
 import argparse
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageFilter
 from scipy.ndimage import (
     binary_fill_holes,
     label,
@@ -21,140 +23,149 @@ from scipy.ndimage import (
     gaussian_filter
 )
 
-# Reference source path
-SOURCE_IMAGE = os.path.join(os.path.dirname(__file__), "..", "reference", "Final_Pose_Library.jpg")
+# Reference source path: 5K Master Sheet (5056x3372)
+SOURCE_5K = os.path.join(os.path.dirname(__file__), "..", "reference", "Final_Pose_Library_5K.jpg")
+SOURCE_FALLBACK = os.path.join(os.path.dirname(__file__), "..", "reference", "Final_Pose_Library.jpg")
 OUTPUT_BASE = os.path.join(os.path.dirname(__file__), "..", "public", "hero")
 
-# Exact pose bounding boxes on Final_Pose_Library.jpg (1024x682)
-# Row 1 (Y ~95-340): 1 Observe, 2 Analyze, 3 Explain, 4 Construct, 5 Reveal, 6 Reflect
-# Row 2 (Y ~390-618): 7 Challenge, 8 Decide, 9 Walk, 10 Welcome, 11 Investigate, 12 Victory
-POSES = {
+# Exact coordinates on Final_Pose_Library_5K.jpg (5056x3372)
+POSES_5K = {
     "01-observe": {
         "label": "Observe",
-        "crop": (30, 95, 140, 335),       # x1, y1, x2, y2
+        "crop": (170, 560, 610, 1648),
         "flip": False,
         "screens": ["pause"],
         "props": False,
+        "waist_ratio": 0.60,
         "focal": [0.50, 0.16]
     },
     "02-analyze": {
         "label": "Analyze",
-        "crop": (195, 95, 315, 335),
+        "crop": (1000, 560, 1530, 1648),
         "flip": False,
         "screens": ["practice"],
         "props": False,
+        "waist_ratio": 0.60,
         "focal": [0.50, 0.16]
     },
     "03-explain": {
         "label": "Explain",
-        "crop": (360, 95, 485, 335),
+        "crop": (1780, 560, 2390, 1648),
         "flip": True,  # gestures right in source, flips to face left towards menu
         "screens": ["spare"],
         "props": False,
+        "waist_ratio": 0.60,
         "focal": [0.50, 0.16]
     },
     "04-construct": {
         "label": "Construct",
-        "crop": (510, 95, 680, 335),
+        "crop": (2535, 465, 3360, 1648),
         "flip": False,
         "screens": ["system"],
         "props": True,
+        "waist_ratio": 0.70,
         "focal": [0.50, 0.20]
     },
     "05-reveal": {
         "label": "Reveal",
-        "crop": (700, 95, 835, 335),
+        "crop": (3430, 560, 4130, 1648),
         "flip": False,
         "screens": ["skills"],
         "props": False,
+        "waist_ratio": 0.60,
         "focal": [0.50, 0.16]
     },
     "06-reflect": {
         "label": "Reflect",
-        "crop": (845, 95, 1005, 335),
+        "crop": (4220, 465, 5045, 1648),
         "flip": False,
         "screens": ["journal"],
         "props": True,
+        "waist_ratio": 0.72,
         "focal": [0.50, 0.22]
     },
     "07-challenge": {
         "label": "Challenge",
-        "crop": (15, 390, 165, 615),
+        "crop": (35, 1945, 835, 2985),
         "flip": False,
         "screens": ["spare"],
         "props": False,
+        "waist_ratio": 0.60,
         "focal": [0.50, 0.16]
     },
     "08-decide": {
         "label": "Decide",
-        "crop": (210, 390, 310, 615),
+        "crop": (1050, 1945, 1460, 3010),
         "flip": False,
         "screens": ["spare"],
         "props": False,
+        "waist_ratio": 0.60,
         "focal": [0.50, 0.16]
     },
     "09-walk": {
         "label": "Walk",
-        "crop": (350, 390, 465, 615),
+        "crop": (1730, 1945, 2330, 3015),
         "flip": False,
         "screens": ["quests"],
         "props": False,
+        "waist_ratio": 0.60,
         "focal": [0.50, 0.16]
     },
     "10-welcome": {
         "label": "Welcome",
-        "crop": (514, 390, 666, 615),
+        "crop": (2530, 1940, 3295, 3015),
         "flip": False,
         "screens": ["home"],
         "props": False,
+        "waist_ratio": 0.62,
         "focal": [0.48, 0.16]
     },
     "11-investigate": {
         "label": "Investigate",
-        "crop": (705, 390, 820, 615),
+        "crop": (3490, 1940, 4050, 3010),
         "flip": False,
         "screens": ["words"],
         "props": False,
+        "waist_ratio": 0.60,
         "focal": [0.50, 0.16]
     },
     "12-victory": {
         "label": "Victory",
-        "crop": (875, 390, 990, 615),
+        "crop": (4325, 1940, 4880, 3015),
         "flip": False,
         "screens": ["victory", "milestone"],
         "props": False,
+        "waist_ratio": 0.60,
         "focal": [0.50, 0.16]
     }
 }
 
 
-def extract_cutout(crop_rgb, has_props=False):
+def extract_cutout_5k(crop_rgb, has_props=False):
     """
-    Given a cropped RGB numpy array of a pose, cleanly separates the figure
+    Given a cropped RGB numpy array of a 5K pose, cleanly separates the figure
     from the warm off-white background and floor shadow.
-    Returns: RGBA numpy array with 1px feathered anti-aliasing and de-fringed RGB.
+    Returns: RGBA PIL Image with anti-aliasing, color de-fringing, and unsharp sharpening.
     """
     h, w, _ = crop_rgb.shape
     float_rgb = crop_rgb.astype(float)
 
-    # 1. Background color reference (sampled from corners and upper border)
-    bg_samples = np.vstack([crop_rgb[0, :], crop_rgb[:10, 0], crop_rgb[:10, -1]])
+    # 1. Background color sampling (top and outer margins)
+    bg_samples = np.vstack([crop_rgb[0, :], crop_rgb[:25, 0], crop_rgb[:25, -1]])
     bg_color = bg_samples.mean(axis=0)
 
-    # Brightness and saturation
     mean_rgb = float_rgb.mean(axis=2)
     std_rgb = float_rgb.std(axis=2)
 
-    # Background candidates: warm off-white paper
+    # Background candidates (warm off-white paper)
     is_bg = (mean_rgb > 205) & (std_rgb < 15)
 
-    # Shadow candidates in bottom region: slightly darkened off-white
-    # Shadow is around mean 100-205, low saturation. Shoes are deep black (<40).
-    bottom_start = max(0, h - 35)
+    # Floor shadow candidate in bottom rows
+    bottom_start = max(0, h - 90)
     shadow_mask = (mean_rgb > 85) & (mean_rgb <= 205) & (std_rgb < 16)
     is_bg[bottom_start:, :] |= shadow_mask[bottom_start:, :]
 
-    # Floor / boundary flood-fill: connected components touching the borders
+    # Flood fill from borders
     border_mask = np.zeros((h, w), dtype=bool)
     border_mask[0, :] = True
     border_mask[-1, :] = True
@@ -167,15 +178,13 @@ def extract_cutout(crop_rgb, has_props=False):
 
     # Foreground is inverse
     fg = ~final_bg
-    # Fill internal holes (e.g. white shirt collar, pocket square enclosed inside dark coat)
     fg = binary_fill_holes(fg)
 
-    # Remove small specks / stray labels
+    # Keep character (and props if present)
     labeled_fg, num_fg = label(fg)
     if num_fg > 1:
         sizes = [np.sum(labeled_fg == i) for i in range(1, num_fg + 1)]
         if has_props:
-            # Keep components with significant size (> 5% of largest)
             max_size = max(sizes)
             fg = np.isin(labeled_fg, [i + 1 for i, s in enumerate(sizes) if s > max_size * 0.05])
         else:
@@ -190,24 +199,22 @@ def extract_cutout(crop_rgb, has_props=False):
     min_y, max_y = y_indices.min(), y_indices.max()
     min_x, max_x = x_indices.min(), x_indices.max()
 
-    # Add 1px padding
-    p_min_y = max(0, min_y - 2)
-    p_max_y = min(h, max_y + 3)
-    p_min_x = max(0, min_x - 2)
-    p_max_x = min(w, max_x + 3)
+    p_min_y = max(0, min_y - 4)
+    p_max_y = min(h, max_y + 6)
+    p_min_x = max(0, min_x - 4)
+    p_max_x = min(w, max_x + 6)
 
     fg_tight = fg[p_min_y:p_max_y, p_min_x:p_max_x]
     rgb_tight = float_rgb[p_min_y:p_max_y, p_min_x:p_max_x]
     th, tw = fg_tight.shape
 
-    # 2. Edge feathering and de-fringing
-    # Feather alpha with gaussian filter
-    alpha = gaussian_filter(fg_tight.astype(float), sigma=0.65)
+    # 2. Feather alpha edge
+    alpha = gaussian_filter(fg_tight.astype(float), sigma=1.0)
     alpha = np.clip((alpha - 0.15) / 0.75, 0.0, 1.0)
 
-    # De-fringe: unmix background color on semi-transparent transition pixels
+    # 3. De-fringe: unmix background color
     de_fringed = rgb_tight.copy()
-    edge_mask = (alpha > 0.04) & (alpha < 0.96)
+    edge_mask = (alpha > 0.03) & (alpha < 0.97)
     for c in range(3):
         de_fringed[edge_mask, c] = (
             rgb_tight[edge_mask, c] - (1.0 - alpha[edge_mask]) * bg_color[c]
@@ -215,18 +222,19 @@ def extract_cutout(crop_rgb, has_props=False):
 
     de_fringed = np.clip(de_fringed, 0, 255).astype(np.uint8)
 
+    # 4. Subtle unsharp mask on RGB to preserve crisp coat & splatter details
+    rgb_pil = Image.fromarray(de_fringed)
+    sharpened_pil = rgb_pil.filter(ImageFilter.UnsharpMask(radius=1.5, percent=125, threshold=3))
+
     rgba = np.zeros((th, tw, 4), dtype=np.uint8)
-    rgba[:, :, :3] = de_fringed
+    rgba[:, :, :3] = np.array(sharpened_pil)
     rgba[:, :, 3] = (alpha * 255).astype(np.uint8)
 
     return Image.fromarray(rgba)
 
 
 def generate_mask(fg_image_at_size, dilation_radius=8):
-    """
-    Generates an 8px dilated silhouette mask from the alpha channel of an image.
-    Used in UI as the crisp ivory outline behind the hero.
-    """
+    """Generates an 8px dilated silhouette mask for high-contrast ivory outline."""
     alpha = np.array(fg_image_at_size)[:, :, 3]
     binary_fg = alpha > 80
 
@@ -235,103 +243,95 @@ def generate_mask(fg_image_at_size, dilation_radius=8):
     dilated = binary_dilation(binary_fg, structure=struct)
 
     mask_rgba = np.zeros((fg_image_at_size.height, fg_image_at_size.width, 4), dtype=np.uint8)
-    mask_rgba[:, :, :3] = 255  # Solid white
+    mask_rgba[:, :, :3] = 255
     mask_rgba[:, :, 3] = (dilated * 255).astype(np.uint8)
 
     return Image.fromarray(mask_rgba)
 
 
-def process_pose(source_img_arr, pose_id, pose_config, output_dir):
-    """
-    Processes a single pose and writes out figure.webp, figure@1080.webp, and mask.webp.
-    """
-    print(f"Processing pose: {pose_id} ({pose_config['label']})...")
-    x1, y1, x2, y2 = pose_config["crop"]
-    crop_rgb = source_img_arr[y1:y2, x1:x2]
+def process_pose_5k(source_arr, pid, p_cfg, out_dir):
+    print(f"Processing 5K pose: {pid} ({p_cfg['label']})...")
+    x1, y1, x2, y2 = p_cfg["crop"]
+    crop_rgb = source_arr[y1:y2, x1:x2]
 
-    # Extract clean cutout
-    cutout = extract_cutout(crop_rgb, has_props=pose_config.get("props", False))
-
-    if pose_config.get("flip", False):
+    cutout = extract_cutout_5k(crop_rgb, has_props=p_cfg.get("props", False))
+    if p_cfg.get("flip", False):
         cutout = cutout.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
 
-    os.makedirs(output_dir, exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
 
-    # 1. 1600px tall master
+    # 1. Full Body Master: 2000px tall
     aspect = cutout.width / cutout.height
-    master_h = 1600
+    master_h = 2000
     master_w = int(master_h * aspect)
     master_img = cutout.resize((master_w, master_h), Image.Resampling.LANCZOS)
-    master_path = os.path.join(output_dir, "figure.webp")
+    master_path = os.path.join(out_dir, "figure.webp")
     master_img.save(master_path, "WEBP", quality=95)
-    print(f"  -> Saved {master_path} ({master_w}x{master_h})")
 
-    # 2. 1080px display variant
-    display_h = 1080
+    # 2. Full Body Display Variant: 1200px tall
+    display_h = 1200
     display_w = int(display_h * aspect)
     display_img = cutout.resize((display_w, display_h), Image.Resampling.LANCZOS)
-    display_path = os.path.join(output_dir, "figure@1080.webp")
+    display_path = os.path.join(out_dir, "figure@1080.webp")
     display_img.save(display_path, "WEBP", quality=92)
-    print(f"  -> Saved {display_path} ({display_w}x{display_h})")
 
-    # 3. 8px dilated mask at 1080px resolution
+    # 3. Full Body 8px Dilated Mask
     mask_img = generate_mask(display_img, dilation_radius=8)
-    mask_path = os.path.join(output_dir, "mask.webp")
+    mask_path = os.path.join(out_dir, "mask.webp")
     mask_img.save(mask_path, "WEBP", quality=90)
-    print(f"  -> Saved {mask_path} ({display_w}x{display_h})")
 
-    # 4. QA Composite verification (composite on obsidian #0A0A0A, ivory #F2EFE6, crimson #B31217, gold #D4AF37)
-    qa_dir = os.path.join(output_dir, "qa")
+    # 4. Dynamic Zoom Waist Crop: top waist_ratio (typically 60-65% height)
+    waist_ratio = p_cfg.get("waist_ratio", 0.60)
+    w_crop_h = int(cutout.height * waist_ratio)
+    waist_cutout = cutout.crop((0, 0, cutout.width, w_crop_h))
+    w_aspect = waist_cutout.width / waist_cutout.height
+    w_target_h = 1200
+    w_target_w = int(w_target_h * w_aspect)
+    waist_img = waist_cutout.resize((w_target_w, w_target_h), Image.Resampling.LANCZOS)
+    waist_path = os.path.join(out_dir, "figure_waist.webp")
+    waist_img.save(waist_path, "WEBP", quality=94)
+
+    # 5. Waist 8px Dilated Mask
+    mask_waist = generate_mask(waist_img, dilation_radius=8)
+    mask_waist_path = os.path.join(out_dir, "mask_waist.webp")
+    mask_waist.save(mask_waist_path, "WEBP", quality=90)
+
+    # 6. QA Composites on Obsidian & Ivory
+    qa_dir = os.path.join(out_dir, "qa")
     os.makedirs(qa_dir, exist_ok=True)
-    bgs = {
-        "obsidian": (10, 10, 10),
-        "ivory": (242, 239, 230),
-        "crimson": (179, 18, 23),
-        "gold": (212, 175, 55)
-    }
-    for bg_name, color in bgs.items():
-        comp = Image.new("RGBA", (display_w, display_h), (*color, 255))
-        # Mask layer tinted ivory
-        mask_tint = Image.new("RGBA", (display_w, display_h), (242, 239, 230, 255))
-        comp.paste(mask_tint, (0, 0), mask_img)
-        # Figure layer
-        comp.paste(display_img, (0, 0), display_img)
-        comp.convert("RGB").save(os.path.join(qa_dir, f"qa_{bg_name}.png"))
+    for bg_name, color in [("obsidian", (10, 10, 10)), ("ivory", (242, 239, 230))]:
+        comp = Image.new("RGBA", (w_target_w, w_target_h), (*color, 255))
+        mask_tint = Image.new("RGBA", (w_target_w, w_target_h), (242, 239, 230, 255))
+        comp.paste(mask_tint, (0, 0), mask_waist)
+        comp.paste(waist_img, (0, 0), waist_img)
+        comp.convert("RGB").save(os.path.join(qa_dir, f"qa_waist_{bg_name}.png"))
 
-    print(f"  -> QA composites verified in {qa_dir}")
+    print(f"  -> Extracted {pid}: Full ({master_w}x{master_h}) & Waist Zoom ({w_target_w}x{w_target_h})")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Extract hero character poses for CANT Atlus UI")
-    parser.add_argument("--pose", default="10-welcome", help="Pose ID to extract (e.g. 10-welcome, or 'all')")
+    parser = argparse.ArgumentParser(description="Extract 5K hero character poses for CANT Atlus UI")
+    parser.add_argument("--pose", default="all", help="Pose ID to extract (e.g. 10-welcome, or 'all')")
     args = parser.parse_args()
 
-    if not os.path.exists(SOURCE_IMAGE):
-        print(f"Error: Source image not found at {SOURCE_IMAGE}")
-        sys.exit(1)
+    src_file = SOURCE_5K if os.path.exists(SOURCE_5K) else SOURCE_FALLBACK
+    print(f"Using source image: {src_file}")
 
-    source_img = Image.open(SOURCE_IMAGE).convert("RGB")
+    source_img = Image.open(src_file).convert("RGB")
     source_arr = np.array(source_img)
 
-    poses_to_run = POSES.keys() if args.pose == "all" else [args.pose]
-
+    poses_to_run = POSES_5K.keys() if args.pose == "all" else [args.pose]
     manifest = {}
     manifest_path = os.path.join(OUTPUT_BASE, "manifest.json")
-    if os.path.exists(manifest_path):
-        try:
-            with open(manifest_path, "r", encoding="utf-8") as f:
-                manifest = json.load(f)
-        except Exception:
-            manifest = {}
 
     for pid in poses_to_run:
-        if pid not in POSES:
-            print(f"Unknown pose: {pid}. Available: {list(POSES.keys())}")
+        if pid not in POSES_5K:
+            print(f"Unknown pose: {pid}. Available: {list(POSES_5K.keys())}")
             continue
 
-        p_cfg = POSES[pid]
+        p_cfg = POSES_5K[pid]
         out_dir = os.path.join(OUTPUT_BASE, pid)
-        process_pose(source_arr, pid, p_cfg, out_dir)
+        process_pose_5k(source_arr, pid, p_cfg, out_dir)
 
         manifest[pid] = {
             "label": p_cfg["label"],
@@ -343,13 +343,13 @@ def main():
             },
             "focal": p_cfg.get("focal", [0.5, 0.16]),
             "screens": p_cfg.get("screens", []),
-            "props": p_cfg.get("props", False)
+            "props": p_cfg.get("props", False),
+            "source": "5k_master"
         }
 
-    os.makedirs(OUTPUT_BASE, exist_ok=True)
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2)
-    print(f"\nManifest successfully updated at {manifest_path}")
+    print(f"\nManifest successfully updated with 5K assets at {manifest_path}")
 
 
 if __name__ == "__main__":

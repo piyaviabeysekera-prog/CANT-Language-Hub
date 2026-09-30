@@ -1,39 +1,4 @@
 {
-  "10-welcome": {
-    "label": "Welcome",
-    "flip": false,
-    "crops": {
-      "full": {
-        "anchor": [
-          0.5,
-          1.0
-        ],
-        "scale": 1.0
-      },
-      "waist": {
-        "anchor": [
-          0.5,
-          0.55
-        ],
-        "scale": 1.35
-      },
-      "bust": {
-        "anchor": [
-          0.5,
-          0.3
-        ],
-        "scale": 1.9
-      }
-    },
-    "focal": [
-      0.48,
-      0.16
-    ],
-    "screens": [
-      "home"
-    ],
-    "props": false
-  },
   "01-observe": {
     "label": "Observe",
     "flip": false,
@@ -67,7 +32,8 @@
     "screens": [
       "pause"
     ],
-    "props": false
+    "props": false,
+    "source": "5k_master"
   },
   "02-analyze": {
     "label": "Analyze",
@@ -102,7 +68,8 @@
     "screens": [
       "practice"
     ],
-    "props": false
+    "props": false,
+    "source": "5k_master"
   },
   "03-explain": {
     "label": "Explain",
@@ -137,7 +104,8 @@
     "screens": [
       "spare"
     ],
-    "props": false
+    "props": false,
+    "source": "5k_master"
   },
   "04-construct": {
     "label": "Construct",
@@ -172,7 +140,8 @@
     "screens": [
       "system"
     ],
-    "props": true
+    "props": true,
+    "source": "5k_master"
   },
   "05-reveal": {
     "label": "Reveal",
@@ -207,7 +176,8 @@
     "screens": [
       "skills"
     ],
-    "props": false
+    "props": false,
+    "source": "5k_master"
   },
   "06-reflect": {
     "label": "Reflect",
@@ -242,7 +212,8 @@
     "screens": [
       "journal"
     ],
-    "props": true
+    "props": true,
+    "source": "5k_master"
   },
   "07-challenge": {
     "label": "Challenge",
@@ -277,7 +248,8 @@
     "screens": [
       "spare"
     ],
-    "props": false
+    "props": false,
+    "source": "5k_master"
   },
   "08-decide": {
     "label": "Decide",
@@ -312,7 +284,8 @@
     "screens": [
       "spare"
     ],
-    "props": false
+    "props": false,
+    "source": "5k_master"
   },
   "09-walk": {
     "label": "Walk",
@@ -347,7 +320,44 @@
     "screens": [
       "quests"
     ],
-    "props": false
+    "props": false,
+    "source": "5k_master"
+  },
+  "10-welcome": {
+    "label": "Welcome",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.48,
+      0.16
+    ],
+    "screens": [
+      "home"
+    ],
+    "props": false,
+    "source": "5k_master"
   },
   "11-investigate": {
     "label": "Investigate",
@@ -382,7 +392,8 @@
     "screens": [
       "words"
     ],
-    "props": false
+    "props": false,
+    "source": "5k_master"
   },
   "12-victory": {
     "label": "Victory",
@@ -418,6 +429,7 @@
       "victory",
       "milestone"
     ],
-    "props": false
+    "props": false,
+    "source": "5k_master"
   }
 }
