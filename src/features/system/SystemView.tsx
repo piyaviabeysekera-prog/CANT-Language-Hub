@@ -85,18 +85,23 @@ export const SystemView: React.FC = () => {
             Interface Theme
           </h2>
           <div className="grid grid-cols-3 gap-3">
-            {(['ink', 'night', 'day'] as Theme[]).map((t) => (
+            {[
+              { id: 'gentleman' as Theme, label: 'Gentleman', desc: 'Obsidian #0A0A0A' },
+              { id: 'deep' as Theme, label: 'Deep', desc: 'Intelligence #0A1F3D' },
+              { id: 'growth' as Theme, label: 'Growth', desc: 'Systems #0A4F3C' },
+            ].map((t) => (
               <button
-                key={t}
+                key={t.id}
                 type="button"
-                onClick={() => setTheme(t)}
-                className={`py-3 px-4 rounded border-2 text-xs font-mono font-bold uppercase transition-all ${
-                  theme === t
-                    ? 'border-accent bg-accent text-white shadow-none translate-x-[2px] translate-y-[2px]'
-                    : 'border-ink bg-panel text-ink hover:bg-bg-deep/10 shadow-[3px_3px_0_var(--bg-deep)]'
+                onClick={() => setTheme(t.id)}
+                className={`py-3 px-3 rounded border-2 text-xs font-mono font-bold uppercase transition-all flex flex-col items-center justify-center ${
+                  theme === t.id
+                    ? 'border-crimson bg-crimson text-ivory shadow-none translate-x-[2px] translate-y-[2px]'
+                    : 'border-ink bg-ivory text-ink hover:bg-gold/10 shadow-[3px_3px_0_var(--gunmetal)]'
                 }`}
               >
-                {t.toUpperCase()}
+                <span>{t.label}</span>
+                <span className="text-[9px] font-normal opacity-75 mt-0.5">{t.desc}</span>
               </button>
             ))}
           </div>

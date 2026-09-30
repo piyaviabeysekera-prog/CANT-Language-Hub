@@ -8,6 +8,11 @@
 @import '@fontsource/inter/600.css';
 @import '@fontsource/inter/700.css';
 @import '@fontsource/cormorant-garamond/600.css';
+@import '@fontsource/anton/400.css';
+@import '@fontsource/playfair-display/900.css';
+@import '@fontsource/oswald/400.css';
+@import '@fontsource/oswald/700.css';
+@import '@fontsource/alfa-slab-one/400.css';
 
 body {
   margin: 0;

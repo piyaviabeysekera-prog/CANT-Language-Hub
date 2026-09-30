@@ -1,29 +1,100 @@
-:root, [data-theme="ink"] {
-  --bg: #1F3A3D;
-  --bg-deep: #152A2C;
-  --panel: #EDE6D6;
-  --ink: #14201F;
-  --text-on-bg: #EDE6D6;
-  --muted: #7C9A98;
-  --accent: #C8342B;
+/* Atlus-Style Brand Color Tokens (70% Obsidian / 20% Gold / 10% Crimson) */
+:root, [data-theme="gentleman"] {
+  --obsidian:  #0A0A0A;   /* bg */
+  --charcoal:  #1A1A1A;   /* raised surfaces */
+  --gunmetal:  #2B2B2B;   /* slabs, dividers */
+  --silver:    #B0B0B0;   /* secondary text on dark */
+  --ivory:     #F2EFE6;   /* panels, hero wedge, primary text on dark */
+  --gold:      #D4AF37;   /* headings, hairlines, rim light, ghost word tint */
+  --crimson:   #B31217;   /* selection fill, errors, one accent per screen */
+  --ink:       #0A0A0A;   /* text on ivory */
+
+  /* Semantic slots */
+  --bg: var(--obsidian);
+  --bg-deep: var(--charcoal);
+  --panel: var(--ivory);
+  --ink: #0A0A0A;
+  --text-on-bg: var(--ivory);
+  --muted: var(--silver);
+  --accent: var(--crimson);
 }
 
-[data-theme="night"] {
-  --bg: #0D0E15;
-  --bg-deep: #08080D;
-  --panel: #EDE4D0;
-  --ink: #14141A;
-  --text-on-bg: #EDE4D0;
-  --muted: #8A8A96;
-  --accent: #D1232A;
+[data-theme="deep"] {
+  --obsidian:  #0A1F3D;   /* Data / Intelligence */
+  --charcoal:  #0E284D;
+  --gunmetal:  #173868;
+  --silver:    #B0B0B0;
+  --ivory:     #F2EFE6;
+  --gold:      #D4AF37;
+  --crimson:   #B31217;
+  --ink:       #0A0A0A;
+
+  --bg: var(--obsidian);
+  --bg-deep: var(--charcoal);
+  --panel: var(--ivory);
+  --ink: #0A0A0A;
+  --text-on-bg: var(--ivory);
+  --muted: var(--silver);
+  --accent: var(--crimson);
 }
 
-[data-theme="day"] {
-  --bg: #F1E7CF;
-  --bg-deep: #E4D6B4;
-  --panel: #FFF9EA;
-  --ink: #2A2418;
-  --text-on-bg: #2A2418;
-  --muted: #8C7A55;
-  --accent: #C8342B;
+[data-theme="growth"] {
+  --obsidian:  #0A4F3C;   /* Growth / Systems */
+  --charcoal:  #0E5E48;
+  --gunmetal:  #18735A;
+  --silver:    #B0B0B0;
+  --ivory:     #F2EFE6;
+  --gold:      #D4AF37;
+  --crimson:   #B31217;
+  --ink:       #0A0A0A;
+
+  --bg: var(--obsidian);
+  --bg-deep: var(--charcoal);
+  --panel: var(--ivory);
+  --ink: #0A0A0A;
+  --text-on-bg: var(--ivory);
+  --muted: var(--silver);
+  --accent: var(--crimson);
+}
+
+/* Atlus Menu Entrance Animations (400ms entrance, then completely static) */
+@keyframes atlusHeroEntrance {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes atlusWedgeEntrance {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px) skewX(-12deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) skewX(-12deg);
+  }
+}
+
+.atlus-hero-entrance {
+  animation: atlusHeroEntrance 400ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.atlus-wedge-entrance {
+  animation: atlusWedgeEntrance 380ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlus-hero-entrance,
+  .atlus-wedge-entrance {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
 }

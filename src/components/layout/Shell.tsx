@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { MenuStack, NAV_ITEMS } from '../menu/MenuStack';
-import { HeroArt } from './HeroArt';
 import { GhostWord } from './GhostWord';
 import { ContextBar } from './ContextBar';
 import { db } from '../../data/db';
@@ -38,9 +37,8 @@ export const Shell: React.FC<ShellProps> = ({
 
   return (
     <div className="relative min-h-screen w-full bg-bg text-text-on-bg flex flex-col justify-between overflow-x-hidden">
-      {/* Background Ambience & Ghost Word */}
+      {/* Background Ambience & Subtle Ghost Word */}
       <GhostWord word={activeGhost} />
-      <HeroArt />
 
       {/* Main Content Area with Split Layout */}
       <div className="flex-1 flex flex-row pb-12 z-10">

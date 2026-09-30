@@ -1,20 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Play, 
   Clock, 
   Brain, 
   ShieldAlert, 
   ArrowRight, 
-  CheckCircle2, 
   Sparkles, 
-  Volume2, 
-  Dumbbell, 
   Zap,
-  Target,
-  Compass,
-  Layers,
-  ChevronRight
+  Compass
 } from 'lucide-react';
 import { useSpeech } from '../../hooks/useSpeech';
 import { AudioButton } from '../../components/audio/AudioButton';

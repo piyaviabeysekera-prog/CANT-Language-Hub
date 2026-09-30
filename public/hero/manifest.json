@@ -1,0 +1,423 @@
+{
+  "10-welcome": {
+    "label": "Welcome",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.48,
+      0.16
+    ],
+    "screens": [
+      "home"
+    ],
+    "props": false
+  },
+  "01-observe": {
+    "label": "Observe",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.16
+    ],
+    "screens": [
+      "pause"
+    ],
+    "props": false
+  },
+  "02-analyze": {
+    "label": "Analyze",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.16
+    ],
+    "screens": [
+      "practice"
+    ],
+    "props": false
+  },
+  "03-explain": {
+    "label": "Explain",
+    "flip": true,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.16
+    ],
+    "screens": [
+      "spare"
+    ],
+    "props": false
+  },
+  "04-construct": {
+    "label": "Construct",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.2
+    ],
+    "screens": [
+      "system"
+    ],
+    "props": true
+  },
+  "05-reveal": {
+    "label": "Reveal",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.16
+    ],
+    "screens": [
+      "skills"
+    ],
+    "props": false
+  },
+  "06-reflect": {
+    "label": "Reflect",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.22
+    ],
+    "screens": [
+      "journal"
+    ],
+    "props": true
+  },
+  "07-challenge": {
+    "label": "Challenge",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.16
+    ],
+    "screens": [
+      "spare"
+    ],
+    "props": false
+  },
+  "08-decide": {
+    "label": "Decide",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.16
+    ],
+    "screens": [
+      "spare"
+    ],
+    "props": false
+  },
+  "09-walk": {
+    "label": "Walk",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.16
+    ],
+    "screens": [
+      "quests"
+    ],
+    "props": false
+  },
+  "11-investigate": {
+    "label": "Investigate",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.16
+    ],
+    "screens": [
+      "words"
+    ],
+    "props": false
+  },
+  "12-victory": {
+    "label": "Victory",
+    "flip": false,
+    "crops": {
+      "full": {
+        "anchor": [
+          0.5,
+          1.0
+        ],
+        "scale": 1.0
+      },
+      "waist": {
+        "anchor": [
+          0.5,
+          0.55
+        ],
+        "scale": 1.35
+      },
+      "bust": {
+        "anchor": [
+          0.5,
+          0.3
+        ],
+        "scale": 1.9
+      }
+    },
+    "focal": [
+      0.5,
+      0.16
+    ],
+    "screens": [
+      "victory",
+      "milestone"
+    ],
+    "props": false
+  }
+}

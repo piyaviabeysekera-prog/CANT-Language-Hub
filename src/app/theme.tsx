@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { db } from '../data/db';
 
-export type Theme = 'ink' | 'night' | 'day';
+export type Theme = 'gentleman' | 'deep' | 'growth';
 
 interface ThemeContextType {
   theme: Theme;
@@ -9,21 +9,25 @@ interface ThemeContextType {
 }
 
 const ThemeContext = createContext<ThemeContextType>({
-  theme: 'ink',
+  theme: 'gentleman',
   setTheme: () => {},
 });
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setThemeState] = useState<Theme>('ink');
+  const [theme, setThemeState] = useState<Theme>('gentleman');
 
   useEffect(() => {
     async function loadTheme() {
       const saved = await db.settings.get('theme');
       if (saved && saved.value) {
-        setThemeState(saved.value as Theme);
-        document.documentElement.setAttribute('data-theme', saved.value);
+        let val = saved.value as Theme;
+        if ((val as string) === 'ink' || (val as string) === 'night' || (val as string) === 'day') {
+          val = 'gentleman';
+        }
+        setThemeState(val);
+        document.documentElement.setAttribute('data-theme', val);
       } else {
-        document.documentElement.setAttribute('data-theme', 'ink');
+        document.documentElement.setAttribute('data-theme', 'gentleman');
       }
     }
     loadTheme();

@@ -4,6 +4,8 @@ import { ThemeProvider } from './app/theme';
 import { AppRouter } from './app/router';
 import { initializeDatabase } from './data/initDb';
 
+import { MenuProvider } from './app/menuContext';
+
 export function App() {
   const [ready, setReady] = useState(false);
 
@@ -13,7 +15,7 @@ export function App() {
 
   if (!ready) {
     return (
-      <div className="min-h-screen w-full bg-[#1F3A3D] text-[#EDE6D6] flex items-center justify-center font-mono text-xs">
+      <div className="min-h-screen w-full bg-[#0A0A0A] text-[#F2EFE6] flex items-center justify-center font-mono text-xs">
         INITIALIZING ARCHON 01 DATABASE...
       </div>
     );
@@ -21,9 +23,11 @@ export function App() {
 
   return (
     <ThemeProvider>
-      <HashRouter>
-        <AppRouter />
-      </HashRouter>
+      <MenuProvider>
+        <HashRouter>
+          <AppRouter />
+        </HashRouter>
+      </MenuProvider>
     </ThemeProvider>
   );
 }
