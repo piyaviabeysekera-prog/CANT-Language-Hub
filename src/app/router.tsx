@@ -9,6 +9,7 @@ import { JournalView } from '../features/journal/JournalView';
 import { QuestsView } from '../features/quests/QuestsView';
 import { SystemView } from '../features/system/SystemView';
 import { LearningPlanView } from '../features/plan/LearningPlanView';
+import { GuidedWizardView } from '../features/practice/GuidedWizardView';
 import { ThaiTestView } from '../features/dev/ThaiTestView';
 
 export const AppRouter: React.FC = () => {
@@ -16,6 +17,7 @@ export const AppRouter: React.FC = () => {
     <Shell>
       <Routes>
         <Route path="/" element={<HomeView />} />
+        <Route path="/wizard" element={<GuidedWizardView />} />
         <Route path="/plan" element={<LearningPlanView />} />
         <Route path="/practice" element={<PracticeView />} />
         <Route path="/words" element={<WordsView />} />

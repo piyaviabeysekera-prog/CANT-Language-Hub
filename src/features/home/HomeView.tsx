@@ -36,25 +36,47 @@ export const HomeView: React.FC = () => {
           className="flex flex-col space-y-2.5"
           onMouseLeave={() => setHoveredPath(null)}
         >
+          {/* 0. MASTER CALL: Guided 5-Minute Daily Session Wizard */}
+          <button
+            type="button"
+            onClick={() => navigate('/wizard')}
+            onMouseEnter={() => setHoveredPath('/wizard')}
+            className={`group relative text-left py-4 px-4 bg-crimson hover:bg-red-800 border-l-4 border-gold shadow-[6px_6px_0_rgba(0,0,0,0.8)] transition-all duration-150 transform hover:-translate-y-0.5 flex items-center justify-between ${
+              activePath === '/wizard' ? 'ring-2 ring-gold' : ''
+            }`}
+          >
+            <div className="flex flex-col">
+              <span className="font-condensed font-black text-lg text-ivory tracking-wider flex items-center gap-2">
+                <span className="text-gold font-black animate-pulse">⚡</span> LAUNCH GUIDED 5-MIN PROTOCOL
+              </span>
+              <span className="text-xs font-sans text-ivory/90 font-medium mt-0.5">
+                4-Phase Automated Sprint: Ear Tuning (60s) → Spoken Retrieval (3m) → Overlearning → Field Quest
+              </span>
+            </div>
+            <span className="font-mono text-xs font-black text-ink bg-gold px-3 py-1 uppercase tracking-widest ml-3 shadow-sm">
+              START HERE
+            </span>
+          </button>
+
           {/* 1. Learning Plan & Protocol */}
           <button
             type="button"
             onClick={() => navigate('/plan')}
             onMouseEnter={() => setHoveredPath('/plan')}
             className={`group relative text-left py-3 px-4 bg-gunmetal hover:bg-charcoal border-l-4 shadow-[4px_4px_0_rgba(0,0,0,0.6)] transition-all duration-150 transform hover:-translate-y-0.5 flex items-center justify-between ${
-              activePath === '/plan' ? 'border-gold bg-charcoal' : 'border-crimson'
+              activePath === '/plan' ? 'border-gold bg-charcoal' : 'border-silver/40'
             }`}
           >
             <div className="flex flex-col">
               <span className="font-condensed font-bold text-base text-ivory tracking-wide group-hover:text-gold transition-colors flex items-center gap-2">
-                <span className="text-crimson font-black">▶</span> 📍 Start Here: Learning Plan & Session Protocol
+                <span className="text-silver group-hover:text-gold">▶</span> 📍 90-Day Master Roadmap & Session Protocol
               </span>
               <span className="text-[11px] font-sans text-silver opacity-80 mt-0.5">
-                The Rogue's Strategy: 4-week roadmap & daily deliberate practice blueprint
+                Month 1 (Survival) → Month 2 (Fluidity) → Month 3 (Automaticity & Charm)
               </span>
             </div>
             <span className="font-mono text-xs font-bold text-gold px-2 py-0.5 border border-gold/40 bg-obsidian/60 uppercase tracking-widest ml-3">
-              BLUEPRINT
+              ROADMAP
             </span>
           </button>
 
