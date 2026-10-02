@@ -28,7 +28,18 @@ export const WordsView: React.FC = () => {
     loadWords();
   }, [selectedWord]);
 
-  const tags = ['all', 'core', 'food', 'transit', 'shopping', 'gym', 'charm', 'greetings'];
+  const tagFilters = [
+    { id: 'all', label: 'All Chunks' },
+    { id: 'gym', label: '🥊 Muay Thai' },
+    { id: 'food', label: '🍜 Street Food' },
+    { id: 'transit', label: '🚕 Transit' },
+    { id: 'charm', label: '🎭 Lupin Charm' },
+    { id: 'shopping', label: '🛍️ Shopping' },
+    { id: 'logistics', label: '🏪 7-11 & Life' },
+    { id: 'tones', label: '⚡ Tone Traps' },
+    { id: 'core', label: '⚓ Core' },
+  ];
+
   const filteredWords = activeTag === 'all'
     ? words
     : words.filter((w) => w.tags.includes(activeTag));
@@ -79,18 +90,18 @@ export const WordsView: React.FC = () => {
           {/* Left Column: Word List */}
           <div className="w-1/2 flex flex-col p5-panel p-4 rounded overflow-hidden">
             {/* Tag Filters */}
-            <div className="flex flex-wrap gap-1.5 pb-3 border-b border-ink/10 mb-2">
-              {tags.map((t) => (
+            <div className="flex flex-wrap gap-1 pb-2 border-b border-ink/10 mb-2">
+              {tagFilters.map((t) => (
                 <button
-                  key={t}
-                  onClick={() => setActiveTag(t)}
+                  key={t.id}
+                  onClick={() => setActiveTag(t.id)}
                   className={`px-2 py-0.5 text-[10px] font-mono uppercase rounded transition-colors ${
-                    activeTag === t
-                      ? 'bg-accent text-white font-bold'
+                    activeTag === t.id
+                      ? 'bg-accent text-white font-bold shadow-xs'
                       : 'bg-bg-deep/10 text-ink/70 hover:bg-bg-deep/20'
                   }`}
                 >
-                  {t}
+                  {t.label}
                 </button>
               ))}
             </div>

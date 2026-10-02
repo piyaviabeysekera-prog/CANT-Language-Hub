@@ -3,9 +3,13 @@
     "id": "th-001",
     "thai": "สวัสดี",
     "roman": "sà-wàat-dii",
-    "meaning": "Hello / Good day",
+    "meaning": "Hello / Good day (Polite greeting)",
     "toneClass": "low",
-    "tags": ["greetings", "charm", "core"],
+    "tags": [
+      "core",
+      "greetings",
+      "charm"
+    ],
     "example": "สวัสดีครับ ผมชื่อเร็น",
     "exampleMeaning": "Hello, my name is Ren."
   },
@@ -15,238 +19,2617 @@
     "roman": "khɔ̀ɔp-khun",
     "meaning": "Thank you",
     "toneClass": "low",
-    "tags": ["greetings", "charm", "core"],
-    "example": "ขอบคุณมากครับ",
-    "exampleMeaning": "Thank you very much."
+    "tags": [
+      "core",
+      "greetings",
+      "charm"
+    ],
+    "example": "ขอบคุณมากครับสำหรับความช่วยเหลือ",
+    "exampleMeaning": "Thank you very much for your help."
   },
   {
     "id": "th-003",
     "thai": "ไม่เป็นไร",
     "roman": "mâi bpen rai",
-    "meaning": "No problem / You're welcome / It's fine",
+    "meaning": "No problem / It's alright / You're welcome",
     "toneClass": "falling",
-    "tags": ["greetings", "charm", "core"],
-    "example": "ไม่เป็นไร สบายมาก",
+    "tags": [
+      "core",
+      "greetings",
+      "charm"
+    ],
+    "example": "ไม่เป็นไร สบายมากครับ",
     "exampleMeaning": "No problem, it's very easy."
   },
   {
     "id": "th-004",
     "thai": "สบายดีไหม",
     "roman": "sà-baai-dii mái?",
-    "meaning": "How are you?",
+    "meaning": "How are you? / Are you doing well?",
     "toneClass": "high",
-    "tags": ["greetings", "social", "core"],
+    "tags": [
+      "core",
+      "social",
+      "greetings"
+    ],
     "example": "สบายดีไหมครับวันนี้",
-    "exampleMeaning": "How are you today?"
+    "exampleMeaning": "How are you doing today?"
   },
   {
     "id": "th-005",
     "thai": "ขอโทษ",
     "roman": "khɔ̌ɔ-thôot",
-    "meaning": "Excuse me / Sorry",
+    "meaning": "Excuse me / Sorry / Pardon me",
     "toneClass": "falling",
-    "tags": ["greetings", "core", "transit"],
-    "example": "ขอโทษครับ ห้องน้ำอยู่ที่ไหน",
-    "exampleMeaning": "Excuse me, where is the restroom?"
+    "tags": [
+      "core",
+      "greetings",
+      "transit"
+    ],
+    "example": "ขอโทษครับ รถไฟหมดกี่โมง",
+    "exampleMeaning": "Excuse me, what time does the train end?"
   },
   {
     "id": "th-006",
-    "thai": "อันนี้เท่าไหร่",
-    "roman": "an níi thâo-rài?",
-    "meaning": "How much is this?",
+    "thai": "ใช่",
+    "roman": "châi",
+    "meaning": "Yes / Correct / That's right",
     "toneClass": "falling",
-    "tags": ["shopping", "street", "core"],
-    "example": "อันนี้เท่าไหร่ครับ ลดได้ไหม",
-    "exampleMeaning": "How much is this? Can you give a discount?"
+    "tags": [
+      "core",
+      "survival"
+    ],
+    "example": "ใช่ครับ ถูกต้องแล้ว",
+    "exampleMeaning": "Yes, that is correct."
   },
   {
     "id": "th-007",
-    "thai": "ลดได้ไหม",
-    "roman": "lót dâi mái?",
-    "meaning": "Can you give a discount?",
-    "toneClass": "high",
-    "tags": ["shopping", "street", "charm"],
-    "example": "แปดสิบบาท ลดได้ไหมครับ",
-    "exampleMeaning": "80 Baht, can you discount it?"
+    "thai": "ไม่ใช่",
+    "roman": "mâi châi",
+    "meaning": "No / Incorrect / Not that",
+    "toneClass": "falling",
+    "tags": [
+      "core",
+      "survival"
+    ],
+    "example": "ไม่ใช่ อันนี้ของเพื่อน",
+    "exampleMeaning": "No, this one belongs to my friend."
   },
   {
     "id": "th-008",
-    "thai": "อร่อยมาก",
-    "roman": "à-rɔ̀ɔi mâak",
-    "meaning": "Very delicious",
-    "toneClass": "falling",
-    "tags": ["food", "charm", "core"],
-    "example": "ต้มยำกุ้งอร่อยมาก",
-    "exampleMeaning": "The Tom Yum soup is very delicious."
+    "thai": "มีไหม",
+    "roman": "mii mái?",
+    "meaning": "Do you have it? / Is there any?",
+    "toneClass": "high",
+    "tags": [
+      "core",
+      "shopping",
+      "food"
+    ],
+    "example": "มีน้ำแข็งไหมครับ",
+    "exampleMeaning": "Do you have ice?"
   },
   {
     "id": "th-009",
-    "thai": "ไม่เผ็ด",
-    "roman": "mâi phèt",
-    "meaning": "Not spicy",
-    "toneClass": "low",
-    "tags": ["food", "survival", "core"],
-    "example": "ขอส้มตำ ไม่เผ็ดครับ",
-    "exampleMeaning": "Som Tum please, not spicy."
+    "thai": "ไม่มี",
+    "roman": "mâi mii",
+    "meaning": "Don't have / There is none",
+    "toneClass": "falling",
+    "tags": [
+      "core",
+      "shopping",
+      "food"
+    ],
+    "example": "ตอนนี้ไม่มีของครับ",
+    "exampleMeaning": "Right now we don't have that item."
   },
   {
     "id": "th-010",
-    "thai": "เช็คบิลด้วย",
-    "roman": "chék bin dûai",
-    "meaning": "Bill please / Check please",
-    "toneClass": "high",
-    "tags": ["food", "street", "core"],
-    "example": "น้องครับ เช็คบิลด้วย",
-    "exampleMeaning": "Excuse me, check please."
+    "thai": "อะไร",
+    "roman": "à-rai?",
+    "meaning": "What?",
+    "toneClass": "mid",
+    "tags": [
+      "core",
+      "questions"
+    ],
+    "example": "อันนี้คืออะไรครับ",
+    "exampleMeaning": "What is this one called?"
   },
   {
     "id": "th-011",
-    "thai": "ห้องน้ำอยู่ที่ไหน",
-    "roman": "hɔ̂ng-náam yùu thîi nǎi?",
-    "meaning": "Where is the restroom?",
+    "thai": "ที่ไหน",
+    "roman": "thîi nǎi?",
+    "meaning": "Where?",
     "toneClass": "rising",
-    "tags": ["transit", "survival", "core"],
-    "example": "ขอโทษครับ ห้องน้ำอยู่ที่ไหน",
-    "exampleMeaning": "Excuse me, where is the restroom?"
+    "tags": [
+      "core",
+      "transit",
+      "questions"
+    ],
+    "example": "สถานีรถไฟฟ้าอยู่ที่ไหน",
+    "exampleMeaning": "Where is the BTS station?"
   },
   {
     "id": "th-012",
-    "thai": "ตรงไป",
-    "roman": "dtrong bpai",
-    "meaning": "Go straight ahead",
-    "toneClass": "mid",
-    "tags": ["transit", "directions", "core"],
-    "example": "ตรงไป แล้วเลี้ยวซ้าย",
-    "exampleMeaning": "Go straight, then turn left."
+    "thai": "เมื่อไหร่",
+    "roman": "mʉ̂a-rài?",
+    "meaning": "When?",
+    "toneClass": "low",
+    "tags": [
+      "core",
+      "questions"
+    ],
+    "example": "จะไปเมื่อไหร่ครับ",
+    "exampleMeaning": "When are you going?"
   },
   {
     "id": "th-013",
-    "thai": "เลี้ยวซ้าย",
-    "roman": "líao sáai",
-    "meaning": "Turn left",
-    "toneClass": "high",
-    "tags": ["transit", "directions", "core"],
-    "example": "ถึงสี่แยกแล้วเลี้ยวซ้าย",
-    "exampleMeaning": "Reach the intersection, then turn left."
+    "thai": "ทำไม",
+    "roman": "tham-mai?",
+    "meaning": "Why?",
+    "toneClass": "mid",
+    "tags": [
+      "core",
+      "questions"
+    ],
+    "example": "ทำไมวันนี้รถติดจัง",
+    "exampleMeaning": "Why is traffic so bad today?"
   },
   {
     "id": "th-014",
-    "thai": "เลี้ยวขวา",
-    "roman": "líao khwǎa",
-    "meaning": "Turn right",
-    "toneClass": "rising",
-    "tags": ["transit", "directions", "core"],
-    "example": "เลี้ยวขวา ตรงหน้าเซเว่น",
-    "exampleMeaning": "Turn right in front of the 7-Eleven."
+    "thai": "อย่างไร",
+    "roman": "yàang-rai?",
+    "meaning": "How? (formal / general)",
+    "toneClass": "mid",
+    "tags": [
+      "core",
+      "questions"
+    ],
+    "example": "ไปที่นั่นอย่างไรดีครับ",
+    "exampleMeaning": "How should I get there?"
   },
   {
     "id": "th-015",
-    "thai": "จอดที่นี่",
-    "roman": "jɔ̀ɔt thîi nîi",
-    "meaning": "Stop here / Drop me off here",
+    "thai": "เท่าไหร่",
+    "roman": "thâo-rài?",
+    "meaning": "How much? / How many?",
     "toneClass": "low",
-    "tags": ["transit", "taxi", "core"],
-    "example": "จอดที่นี่ครับ ขอบคุณครับ",
-    "exampleMeaning": "Stop right here please, thank you."
+    "tags": [
+      "core",
+      "shopping",
+      "questions"
+    ],
+    "example": "ค่าโดยสารเท่าไหร่ครับ",
+    "exampleMeaning": "How much is the fare?"
   },
   {
     "id": "th-016",
-    "thai": "เตะ",
-    "roman": "dtè",
-    "meaning": "Kick (Muay Thai)",
-    "toneClass": "low",
-    "tags": ["gym", "combat", "guts"],
-    "example": "เตะขวาแรงๆ",
-    "exampleMeaning": "Kick with the right leg with full power."
-  },
-  {
-    "id": "th-017",
-    "thai": "ต่อย",
-    "roman": "dtɔ̀y",
-    "meaning": "Punch / Strike",
-    "toneClass": "low",
-    "tags": ["gym", "combat", "guts"],
-    "example": "แย็บ แล้วต่อยขวา",
-    "exampleMeaning": "Jab, then right cross."
-  },
-  {
-    "id": "th-018",
-    "thai": "เข่า",
-    "roman": "khào",
-    "meaning": "Knee strike",
-    "toneClass": "low",
-    "tags": ["gym", "combat", "guts"],
-    "example": "จับคอ ตีเข่า",
-    "exampleMeaning": "Clinch the neck, throw the knee."
-  },
-  {
-    "id": "th-019",
-    "thai": "ศอก",
-    "roman": "sɔ̀ɔk",
-    "meaning": "Elbow strike",
-    "toneClass": "low",
-    "tags": ["gym", "combat", "guts"],
-    "example": "ศอกกลับ",
-    "exampleMeaning": "Spinning back elbow."
-  },
-  {
-    "id": "th-020",
-    "thai": "แรงอีก",
-    "roman": "raaeng ìik",
-    "meaning": "More power! / Hit harder!",
-    "toneClass": "low",
-    "tags": ["gym", "combat", "guts"],
-    "example": "เตะอีกครั้ง แรงอีก!",
-    "exampleMeaning": "Kick again, more power!"
-  },
-  {
-    "id": "th-021",
-    "thai": "พอแล้ว",
-    "roman": "phɔɔ láew",
-    "meaning": "Enough / That's all / Stop",
-    "toneClass": "high",
-    "tags": ["gym", "food", "survival"],
-    "example": "ขอบคุณครับครู พอแล้วครับ",
-    "exampleMeaning": "Thank you Kru, that is enough for today."
-  },
-  {
-    "id": "th-022",
-    "thai": "น่ารักมาก",
-    "roman": "nâa-rák mâak",
-    "meaning": "Very cute / Charming",
-    "toneClass": "high",
-    "tags": ["social", "charm"],
-    "example": "รอยยิ้มเธอน่ารักมาก",
-    "exampleMeaning": "Your smile is very cute."
-  },
-  {
-    "id": "th-023",
     "thai": "พูดภาษาอังกฤษได้ไหม",
     "roman": "phûut phaa-sǎa ang-grìt dâi mái?",
     "meaning": "Can you speak English?",
     "toneClass": "high",
-    "tags": ["survival", "social", "core"],
+    "tags": [
+      "core",
+      "survival"
+    ],
     "example": "ขอโทษครับ พูดภาษาอังกฤษได้ไหม",
     "exampleMeaning": "Excuse me, can you speak English?"
   },
   {
-    "id": "th-024",
+    "id": "th-017",
+    "thai": "พูดช้าๆ หน่อย",
+    "roman": "phûut cháa-cháa nɔ̀ɔi",
+    "meaning": "Speak slower please",
+    "toneClass": "low",
+    "tags": [
+      "core",
+      "learning",
+      "survival"
+    ],
+    "example": "ฟังไม่ทัน ช่วยพูดช้าๆ หน่อยครับ",
+    "exampleMeaning": "I couldn't catch that, please speak slower."
+  },
+  {
+    "id": "th-018",
     "thai": "เข้าใจไหม",
     "roman": "khâo-jai mái?",
     "meaning": "Do you understand?",
     "toneClass": "high",
-    "tags": ["learning", "social", "core"],
-    "example": "เข้าใจไหมครับ",
-    "exampleMeaning": "Do you understand?"
+    "tags": [
+      "core",
+      "learning"
+    ],
+    "example": "ที่ผมอธิบายเข้าใจไหมครับ",
+    "exampleMeaning": "Do you understand what I explained?"
+  },
+  {
+    "id": "th-019",
+    "thai": "เข้าใจแล้ว",
+    "roman": "khâo-jai láew",
+    "meaning": "I understand now / Understood",
+    "toneClass": "high",
+    "tags": [
+      "core",
+      "learning"
+    ],
+    "example": "ขอบคุณครับ เข้าใจแล้ว",
+    "exampleMeaning": "Thank you, I understand now."
+  },
+  {
+    "id": "th-020",
+    "thai": "ไม่เข้าใจ",
+    "roman": "mâi khâo-jai",
+    "meaning": "I don't understand",
+    "toneClass": "falling",
+    "tags": [
+      "core",
+      "learning",
+      "survival"
+    ],
+    "example": "คำนี้แปลว่าอะไร ผมไม่เข้าใจ",
+    "exampleMeaning": "What does this word mean? I don't understand."
+  },
+  {
+    "id": "th-021",
+    "thai": "ช่วยด้วย",
+    "roman": "chûai dûai!",
+    "meaning": "Help me! (Emergency anchor)",
+    "toneClass": "falling",
+    "tags": [
+      "core",
+      "survival",
+      "emergency"
+    ],
+    "example": "ช่วยด้วยครับ มีคนเป็นลม",
+    "exampleMeaning": "Help please! Someone fainted."
+  },
+  {
+    "id": "th-022",
+    "thai": "รอสักครู่",
+    "roman": "rɔɔ sàk khrûu",
+    "meaning": "Please wait a moment",
+    "toneClass": "falling",
+    "tags": [
+      "core",
+      "social"
+    ],
+    "example": "รอสักครู่นะครับ กำลังมา",
+    "exampleMeaning": "Please wait a moment, it is on the way."
+  },
+  {
+    "id": "th-023",
+    "thai": "แป๊บหนึ่ง",
+    "roman": "bpáep nʉ̀ng",
+    "meaning": "Just a second / Hold on (Colloquial)",
+    "toneClass": "high",
+    "tags": [
+      "core",
+      "social",
+      "charm"
+    ],
+    "example": "ขอเวลาแป๊บหนึ่งนะ",
+    "exampleMeaning": "Give me just a second."
+  },
+  {
+    "id": "th-024",
+    "thai": "ยินดีด้วย",
+    "roman": "yin-dii dûai",
+    "meaning": "Congratulations!",
+    "toneClass": "falling",
+    "tags": [
+      "core",
+      "social"
+    ],
+    "example": "ยินดีด้วยกับชัยชนะครับ",
+    "exampleMeaning": "Congratulations on the victory."
   },
   {
     "id": "th-025",
-    "thai": "เข้าใจแล้ว",
-    "roman": "khâo-jai láew",
-    "meaning": "I understand now",
+    "thai": "โชคดี",
+    "roman": "chôok-dii",
+    "meaning": "Good luck!",
+    "toneClass": "falling",
+    "tags": [
+      "core",
+      "social",
+      "charm"
+    ],
+    "example": "ขอให้โชคดีในการแข่งขัน",
+    "exampleMeaning": "Wish you good luck in the match."
+  },
+  {
+    "id": "th-026",
+    "thai": "เตะ",
+    "roman": "dtè",
+    "meaning": "Kick (Muay Thai roundhouse)",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "เตะขวาแรงๆ สิบครั้ง",
+    "exampleMeaning": "Kick with the right leg with full power, 10 times."
+  },
+  {
+    "id": "th-027",
+    "thai": "ต่อย",
+    "roman": "dtɔ̀ɔi",
+    "meaning": "Punch / Strike with fists",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "แย็บ แล้วต่อยขวาตรง",
+    "exampleMeaning": "Jab, then throw the straight right."
+  },
+  {
+    "id": "th-028",
+    "thai": "เข่า",
+    "roman": "khào",
+    "meaning": "Knee strike",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ดึงคอลงมา ตีเข่าลอย",
+    "exampleMeaning": "Pull the neck down, throw the flying knee."
+  },
+  {
+    "id": "th-029",
+    "thai": "ศอก",
+    "roman": "sɔ̀ɔk",
+    "meaning": "Elbow strike",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ฟันศอกกลับ",
+    "exampleMeaning": "Throw a spinning back elbow."
+  },
+  {
+    "id": "th-030",
+    "thai": "ถีบ",
+    "roman": "thìip",
+    "meaning": "Teep / Push kick (Front kick defense)",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ถีบสกัด อย่าให้เข้าใกล้",
+    "exampleMeaning": "Teep to stop him, don't let him get close."
+  },
+  {
+    "id": "th-031",
+    "thai": "จับคอ",
+    "roman": "jàp khɔɔ",
+    "meaning": "Clinch the neck / Neck tie",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "จับคอให้แน่น อย่าให้หลุด",
+    "exampleMeaning": "Lock the neck tight, don't let him slip."
+  },
+  {
+    "id": "th-032",
+    "thai": "บล็อก",
+    "roman": "blɔ́k",
+    "meaning": "Block / Check kick",
     "toneClass": "high",
-    "tags": ["learning", "social", "core"],
-    "example": "ขอบคุณครับ เข้าใจแล้ว",
-    "exampleMeaning": "Thank you, I understand now."
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ยกแข้งบล็อกเตะ",
+    "exampleMeaning": "Raise the shin to check the kick."
+  },
+  {
+    "id": "th-033",
+    "thai": "หลบ",
+    "roman": "lòp",
+    "meaning": "Dodge / Slip / Evade",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ก้มหัวหลบหมัดฮุก",
+    "exampleMeaning": "Duck under the hook punch."
+  },
+  {
+    "id": "th-034",
+    "thai": "แรงอีก",
+    "roman": "raaeng ìik",
+    "meaning": "More power! / Hit harder!",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "เตะเป้า แรงอีก!",
+    "exampleMeaning": "Kick the pads, more power!"
+  },
+  {
+    "id": "th-035",
+    "thai": "เร็วขึ้น",
+    "roman": "reo khʉ̂n",
+    "meaning": "Faster! / Speed up!",
+    "toneClass": "falling",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ออกหมัดเร็วขึ้นอีกนิด",
+    "exampleMeaning": "Throw your punches a bit faster."
+  },
+  {
+    "id": "th-036",
+    "thai": "หายใจเข้า",
+    "roman": "hǎai-jai khâo",
+    "meaning": "Breathe in",
+    "toneClass": "falling",
+    "tags": [
+      "gym",
+      "breath"
+    ],
+    "example": "หายใจเข้าลึกๆ ทางจมูก",
+    "exampleMeaning": "Breathe in deeply through the nose."
+  },
+  {
+    "id": "th-037",
+    "thai": "หายใจออก",
+    "roman": "hǎai-jai ɔ̀ɔk",
+    "meaning": "Breathe out / Exhale on strike",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "breath"
+    ],
+    "example": "เวลาเตะให้หายใจออก",
+    "exampleMeaning": "Exhale sharply when you throw the kick."
+  },
+  {
+    "id": "th-038",
+    "thai": "การ์ดอย่าตก",
+    "roman": "gàat yàa dtòk",
+    "meaning": "Keep your hands up! / Don't drop your guard!",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ระวังหมัด การ์ดอย่าตก",
+    "exampleMeaning": "Watch for punches, keep your guard high!"
+  },
+  {
+    "id": "th-039",
+    "thai": "อีกยกเดียว",
+    "roman": "ìik yók diaw",
+    "meaning": "Just one more round!",
+    "toneClass": "mid",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "อดทนไว้ อีกยกเดียวจะเสร็จแล้ว",
+    "exampleMeaning": "Endure it, just one more round and we are done."
+  },
+  {
+    "id": "th-040",
+    "thai": "พักหนึ่งนาที",
+    "roman": "phák nʉ̀ng naa-thii",
+    "meaning": "Rest for one minute",
+    "toneClass": "mid",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "หมดเวลา พักหนึ่งนาทีดื่มน้ำ",
+    "exampleMeaning": "Time! Rest for one minute and drink water."
+  },
+  {
+    "id": "th-041",
+    "thai": "เหนื่อยมาก",
+    "roman": "nʉ̀ai mâak",
+    "meaning": "Very exhausted / Super tired",
+    "toneClass": "falling",
+    "tags": [
+      "gym",
+      "survival"
+    ],
+    "example": "วันนี้ซ้อมหนัก เหนื่อยมากครับ",
+    "exampleMeaning": "Trained hard today, I am exhausted."
+  },
+  {
+    "id": "th-042",
+    "thai": "เจ็บ",
+    "roman": "jèp",
+    "meaning": "It hurts / In pain",
+    "toneClass": "low",
+    "tags": [
+      "gym",
+      "survival"
+    ],
+    "example": "เจ็บที่หน้าแข้งซ้าย",
+    "exampleMeaning": "My left shin is hurting."
+  },
+  {
+    "id": "th-043",
+    "thai": "ไหวไหม",
+    "roman": "wǎi mái?",
+    "meaning": "Can you handle it? / Are you still okay?",
+    "toneClass": "high",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "เหนื่อยหรือยัง ยังไหวไหม",
+    "exampleMeaning": "Tired yet? Can you still handle it?"
+  },
+  {
+    "id": "th-044",
+    "thai": "ไหวครับ",
+    "roman": "wǎi khráp",
+    "meaning": "I can handle it / Still good!",
+    "toneClass": "rising",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ยังไหวครับครู ลุยต่อเลย",
+    "exampleMeaning": "I can take it Kru, let's keep going!"
+  },
+  {
+    "id": "th-045",
+    "thai": "ไม่ไหวแล้ว",
+    "roman": "mâi wǎi láew",
+    "meaning": "Can't take it anymore / Reached my limit",
+    "toneClass": "high",
+    "tags": [
+      "gym",
+      "survival"
+    ],
+    "example": "ขอนั่งพักก่อน ไม่ไหวแล้วครับ",
+    "exampleMeaning": "Let me sit down, I've hit my limit."
+  },
+  {
+    "id": "th-046",
+    "thai": "พอแล้ว",
+    "roman": "phɔɔ láew",
+    "meaning": "Enough / Stop here",
+    "toneClass": "high",
+    "tags": [
+      "gym",
+      "survival"
+    ],
+    "example": "ขอบคุณครับครู วันนี้พอแล้วครับ",
+    "exampleMeaning": "Thank you Kru, that is enough for today."
+  },
+  {
+    "id": "th-047",
+    "thai": "สู้ๆ",
+    "roman": "sûu-sûu",
+    "meaning": "Keep fighting! / You got this!",
+    "toneClass": "falling",
+    "tags": [
+      "gym",
+      "charm",
+      "combat"
+    ],
+    "example": "ยกสุดท้ายแล้ว สู้ๆ นะครับ",
+    "exampleMeaning": "Final round, give it everything!"
+  },
+  {
+    "id": "th-048",
+    "thai": "นวม",
+    "roman": "nuam",
+    "meaning": "Boxing gloves",
+    "toneClass": "mid",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ขอยืมนวมสิบหกออนซ์หน่อย",
+    "exampleMeaning": "Can I borrow the 16 oz gloves?"
+  },
+  {
+    "id": "th-049",
+    "thai": "ผ้าพันมือ",
+    "roman": "phâa phan mʉʉ",
+    "meaning": "Hand wraps",
+    "toneClass": "mid",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ช่วยพันมือให้หน่อยครับ",
+    "exampleMeaning": "Could you help wrap my hands please?"
+  },
+  {
+    "id": "th-050",
+    "thai": "สนับแข้ง",
+    "roman": "sà-nàp khâeng",
+    "meaning": "Shin guards",
+    "toneClass": "falling",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "ใส่สนับแข้งก่อนลงนวมสปาร์ริ่ง",
+    "exampleMeaning": "Put on shin guards before sparring."
+  },
+  {
+    "id": "th-051",
+    "thai": "สปาร์ริ่ง",
+    "roman": "sà-bpaa-rîng",
+    "meaning": "Sparring",
+    "toneClass": "falling",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "วันนี้มีสปาร์ริ่งเชิงเทคนิค",
+    "exampleMeaning": "Today we have technical sparring."
+  },
+  {
+    "id": "th-052",
+    "thai": "เตะเป้า",
+    "roman": "dtè bpâo",
+    "meaning": "Pad work (kick pads / Thai pads)",
+    "toneClass": "falling",
+    "tags": [
+      "gym",
+      "combat"
+    ],
+    "example": "เตะเป้าห้ายกติดต่อกัน",
+    "exampleMeaning": "Pad work for 5 consecutive rounds."
+  },
+  {
+    "id": "th-053",
+    "thai": "เล่นเวท",
+    "roman": "lên wôot",
+    "meaning": "Weight lifting / Strength training",
+    "toneClass": "falling",
+    "tags": [
+      "gym",
+      "fitness"
+    ],
+    "example": "ซ้อมมวยเสร็จแล้วไปเล่นเวทต่อ",
+    "exampleMeaning": "Finished boxing, now moving on to weights."
+  },
+  {
+    "id": "th-054",
+    "thai": "ยืดกล้ามเนื้อ",
+    "roman": "yʉ̂ʉt glâam-nʉ́a",
+    "meaning": "Stretching / Cool down",
+    "toneClass": "high",
+    "tags": [
+      "gym",
+      "fitness"
+    ],
+    "example": "ยืดกล้ามเนื้อขา ป้องกันตะคริว",
+    "exampleMeaning": "Stretch leg muscles to prevent cramps."
+  },
+  {
+    "id": "th-055",
+    "thai": "ฟอร์มดีมาก",
+    "roman": "fɔɔm dii mâak",
+    "meaning": "Great technique / Sharp form!",
+    "toneClass": "falling",
+    "tags": [
+      "gym",
+      "charm",
+      "combat"
+    ],
+    "example": "วันนี้ฟอร์มดีมาก ออกอาวุธคม",
+    "exampleMeaning": "Great form today, strikes were sharp."
+  },
+  {
+    "id": "th-056",
+    "thai": "ขอ...",
+    "roman": "khɔ̌ɔ...",
+    "meaning": "May I have... (Universal food ordering frame)",
+    "toneClass": "rising",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "ขอกะเพราไก่ไข่ดาวจานหนึ่งครับ",
+    "exampleMeaning": "May I have one chicken basil with fried egg."
+  },
+  {
+    "id": "th-057",
+    "thai": "เอาอันนี้",
+    "roman": "ao an níi",
+    "meaning": "I'll take this one (pointing at menu/dish)",
+    "toneClass": "high",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "เอาอันนี้สองที่ครับ",
+    "exampleMeaning": "I will take two orders of this one."
+  },
+  {
+    "id": "th-058",
+    "thai": "ไม่เผ็ด",
+    "roman": "mâi phèt",
+    "meaning": "Not spicy at all",
+    "toneClass": "low",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "ขอส้มตำ ไม่เผ็ดเลยนะครับ",
+    "exampleMeaning": "Som Tum please, absolutely not spicy."
+  },
+  {
+    "id": "th-059",
+    "thai": "เผ็ดนิดหน่อย",
+    "roman": "phèt nít nɔ̀ɔi",
+    "meaning": "A little bit spicy (Farang sweet spot)",
+    "toneClass": "low",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "ต้มยำกุ้ง ขอเผ็ดนิดหน่อยครับ",
+    "exampleMeaning": "Tom Yum Goong, just a little spicy please."
+  },
+  {
+    "id": "th-060",
+    "thai": "เผ็ดมาก",
+    "roman": "phèt mâak",
+    "meaning": "Very spicy (Thai local level)",
+    "toneClass": "falling",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "กะเพราเนื้อ เผ็ดมากได้เลยครับ",
+    "exampleMeaning": "Beef Kra Pao, make it full local spice level!"
+  },
+  {
+    "id": "th-061",
+    "thai": "ไม่ใส่พริก",
+    "roman": "mâi sài phrík",
+    "meaning": "Don't add chilies (Zero chili guarantee)",
+    "toneClass": "high",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "ผัดซีอิ๊ว ไม่ใส่พริกครับ",
+    "exampleMeaning": "Pad See Ew, do not add chili."
+  },
+  {
+    "id": "th-062",
+    "thai": "ไม่ใส่น้ำตาล",
+    "roman": "mâi sài nám-dtaan",
+    "meaning": "No added sugar",
+    "toneClass": "mid",
+    "tags": [
+      "food",
+      "fitness"
+    ],
+    "example": "กาแฟดำ ไม่ใส่น้ำตาลครับ",
+    "exampleMeaning": "Black coffee with zero sugar please."
+  },
+  {
+    "id": "th-063",
+    "thai": "ไม่ใส่ผงชูรส",
+    "roman": "mâi sài phǒng chuu-rót",
+    "meaning": "No MSG",
+    "toneClass": "high",
+    "tags": [
+      "food",
+      "health"
+    ],
+    "example": "ก๋วยเตี๋ยวชามนี้ ไม่ใส่ผงชูรสนะครับ",
+    "exampleMeaning": "This noodle bowl, please do not add MSG."
+  },
+  {
+    "id": "th-064",
+    "thai": "ทานที่นี่",
+    "roman": "thaan thîi nîi",
+    "meaning": "Eat here / Dine in",
+    "toneClass": "falling",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "ทานที่นี่ครับ สองคน",
+    "exampleMeaning": "Dining in please, table for two."
+  },
+  {
+    "id": "th-065",
+    "thai": "ใส่ถุง",
+    "roman": "sài thǔng",
+    "meaning": "Take away in a bag / To go",
+    "toneClass": "rising",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "ข้าวผัดปู ใส่ถุงกลับบ้านครับ",
+    "exampleMeaning": "Crab fried rice, to-go in a bag."
+  },
+  {
+    "id": "th-066",
+    "thai": "เช็คบิลด้วย",
+    "roman": "chék bin dûai",
+    "meaning": "Check the bill please",
+    "toneClass": "falling",
+    "tags": [
+      "food",
+      "street"
+    ],
+    "example": "น้องครับ โต๊ะห้า เช็คบิลด้วย",
+    "exampleMeaning": "Excuse me, table 5, check please."
+  },
+  {
+    "id": "th-067",
+    "thai": "เก็บเงินด้วย",
+    "roman": "gèp ngoen dûai",
+    "meaning": "Collect money please (Street stall checkout)",
+    "toneClass": "falling",
+    "tags": [
+      "food",
+      "street"
+    ],
+    "example": "ป้าครับ เก็บเงินด้วย เท่าไหร่ครับ",
+    "exampleMeaning": "Auntie, collect money please, how much?"
+  },
+  {
+    "id": "th-068",
+    "thai": "น้ำเปล่า",
+    "roman": "nám bplào",
+    "meaning": "Plain bottled drinking water",
+    "toneClass": "low",
+    "tags": [
+      "food",
+      "drinks"
+    ],
+    "example": "ขอน้ำเปล่าหนึ่งขวดครับ",
+    "exampleMeaning": "One bottle of plain water please."
+  },
+  {
+    "id": "th-069",
+    "thai": "น้ำแข็ง",
+    "roman": "nám khǎeng",
+    "meaning": "Ice (cubes/crushed)",
+    "toneClass": "rising",
+    "tags": [
+      "food",
+      "drinks"
+    ],
+    "example": "ขอน้ำแข็งสองแก้วด้วยครับ",
+    "exampleMeaning": "Two glasses of ice please."
+  },
+  {
+    "id": "th-070",
+    "thai": "หวานน้อย",
+    "roman": "wǎan nɔ́ɔi",
+    "meaning": "Less sweet (25-50% sugar)",
+    "toneClass": "high",
+    "tags": [
+      "food",
+      "drinks",
+      "charm"
+    ],
+    "example": "ชาไทยเย็น หวานน้อยครับ",
+    "exampleMeaning": "Iced Thai tea, less sweet please."
+  },
+  {
+    "id": "th-071",
+    "thai": "ไม่หวาน",
+    "roman": "mâi wǎan",
+    "meaning": "Not sweet / 0% sugar",
+    "toneClass": "rising",
+    "tags": [
+      "food",
+      "drinks"
+    ],
+    "example": "มัทฉะลาเต้ ไม่หวานเลยครับ",
+    "exampleMeaning": "Matcha latte, zero sugar."
+  },
+  {
+    "id": "th-072",
+    "thai": "เส้นใหญ่",
+    "roman": "sên yài",
+    "meaning": "Wide flat rice noodles",
+    "toneClass": "low",
+    "tags": [
+      "food",
+      "noodles"
+    ],
+    "example": "ผัดซีอิ๊วเส้นใหญ่หมู",
+    "exampleMeaning": "Pad See Ew with wide noodles and pork."
+  },
+  {
+    "id": "th-073",
+    "thai": "เส้นเล็ก",
+    "roman": "sên lék",
+    "meaning": "Medium thin rice noodles (Pad Thai noodles)",
+    "toneClass": "high",
+    "tags": [
+      "food",
+      "noodles"
+    ],
+    "example": "ก๋วยเตี๋ยวเรือ เส้นเล็กเนื้อเปื่อย",
+    "exampleMeaning": "Boat noodles with thin rice noodles and stewed beef."
+  },
+  {
+    "id": "th-074",
+    "thai": "บะหมี่",
+    "roman": "bà-mìi",
+    "meaning": "Yellow egg noodles",
+    "toneClass": "low",
+    "tags": [
+      "food",
+      "noodles"
+    ],
+    "example": "บะหมี่แห้งเกี๊ยวหมูแดง",
+    "exampleMeaning": "Dry egg noodles with wontons and BBQ pork."
+  },
+  {
+    "id": "th-075",
+    "thai": "ข้าวสวย",
+    "roman": "khâao sǔai",
+    "meaning": "Steamed white jasmine rice",
+    "toneClass": "rising",
+    "tags": [
+      "food",
+      "dishes"
+    ],
+    "example": "ขอข้าวสวยเพิ่มอีกหนึ่งจาน",
+    "exampleMeaning": "One more plate of jasmine rice please."
+  },
+  {
+    "id": "th-076",
+    "thai": "ข้าวเหนียว",
+    "roman": "khâao nǐao",
+    "meaning": "Sticky rice (Glutinous rice)",
+    "toneClass": "rising",
+    "tags": [
+      "food",
+      "dishes"
+    ],
+    "example": "ไก่ย่างกับข้าวเหนียวสองห่อ",
+    "exampleMeaning": "Grilled chicken with 2 packets of sticky rice."
+  },
+  {
+    "id": "th-077",
+    "thai": "ไข่ดาว",
+    "roman": "khài daao",
+    "meaning": "Fried egg (crispy Thai style)",
+    "toneClass": "mid",
+    "tags": [
+      "food",
+      "dishes"
+    ],
+    "example": "กะเพราหมูกรอบ เพิ่มไข่ดาวไม่สุก",
+    "exampleMeaning": "Crispy pork basil with a runny fried egg."
+  },
+  {
+    "id": "th-078",
+    "thai": "หมู",
+    "roman": "mǔu",
+    "meaning": "Pork",
+    "toneClass": "rising",
+    "tags": [
+      "food",
+      "ingredients"
+    ],
+    "example": "ข้าวขาหมูเนื้อหนัง",
+    "exampleMeaning": "Pork leg rice with meat and skin."
+  },
+  {
+    "id": "th-079",
+    "thai": "ไก่",
+    "roman": "gài",
+    "meaning": "Chicken",
+    "toneClass": "low",
+    "tags": [
+      "food",
+      "ingredients"
+    ],
+    "example": "ข้าวมันไก่ตอนเนื้อน่อง",
+    "exampleMeaning": "Hainanese chicken rice with thigh meat."
+  },
+  {
+    "id": "th-080",
+    "thai": "เนื้อ",
+    "roman": "nʉ́a",
+    "meaning": "Beef",
+    "toneClass": "high",
+    "tags": [
+      "food",
+      "ingredients"
+    ],
+    "example": "เกาเหลาเนื้อตุ๋นพิเศษ",
+    "exampleMeaning": "Special beef soup with stewed beef, no noodles."
+  },
+  {
+    "id": "th-081",
+    "thai": "กุ้ง",
+    "roman": "gûng",
+    "meaning": "Shrimp / Prawns",
+    "toneClass": "falling",
+    "tags": [
+      "food",
+      "ingredients"
+    ],
+    "example": "กุ้งแช่น้ำปลาจานนี้สดมาก",
+    "exampleMeaning": "This raw shrimp in fish sauce is super fresh."
+  },
+  {
+    "id": "th-082",
+    "thai": "เจ",
+    "roman": "jee",
+    "meaning": "Strict Vegetarian / Vegan food",
+    "toneClass": "mid",
+    "tags": [
+      "food",
+      "diet"
+    ],
+    "example": "มีอาหารเจไหมครับ",
+    "exampleMeaning": "Do you have vegetarian / vegan food?"
+  },
+  {
+    "id": "th-083",
+    "thai": "อร่อยมาก",
+    "roman": "à-rɔ̀ɔi mâak",
+    "meaning": "Very delicious!",
+    "toneClass": "falling",
+    "tags": [
+      "food",
+      "charm"
+    ],
+    "example": "รสชาติเข้มข้น อร่อยมากครับ",
+    "exampleMeaning": "Rich and bold flavor, very delicious!"
+  },
+  {
+    "id": "th-084",
+    "thai": "หิวน้ำ",
+    "roman": "hǐo nám",
+    "meaning": "Thirsty",
+    "toneClass": "high",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "วิ่งเสร็จแล้ว หิวน้ำมาก",
+    "exampleMeaning": "Finished running, I'm super thirsty."
+  },
+  {
+    "id": "th-085",
+    "thai": "หิวข้าว",
+    "roman": "hǐo khâao",
+    "meaning": "Hungry (for food/rice)",
+    "toneClass": "falling",
+    "tags": [
+      "food",
+      "survival"
+    ],
+    "example": "เที่ยงแล้ว หิวข้าวหรือยังครับ",
+    "exampleMeaning": "It's noon, are you hungry yet?"
+  },
+  {
+    "id": "th-086",
+    "thai": "ไป...",
+    "roman": "bpai...",
+    "meaning": "Go to... (Primary transit anchor)",
+    "toneClass": "mid",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "ไปทองหล่อ ซอยสิบครับ",
+    "exampleMeaning": "Go to Thong Lo Soi 10 please."
+  },
+  {
+    "id": "th-087",
+    "thai": "ตรงไป",
+    "roman": "dtrong bpai",
+    "meaning": "Go straight ahead",
+    "toneClass": "mid",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "ตรงไปอีกสองร้อยเมตร",
+    "exampleMeaning": "Go straight for another 200 meters."
+  },
+  {
+    "id": "th-088",
+    "thai": "เลี้ยวซ้าย",
+    "roman": "líao sáai",
+    "meaning": "Turn left",
+    "toneClass": "high",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "ถึงสี่แยกแล้วเลี้ยวซ้าย",
+    "exampleMeaning": "Reach the crossroads, then turn left."
+  },
+  {
+    "id": "th-089",
+    "thai": "เลี้ยวขวา",
+    "roman": "líao khwǎa",
+    "meaning": "Turn right",
+    "toneClass": "rising",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "ข้างหน้าเลี้ยวขวาเข้าซอย",
+    "exampleMeaning": "Turn right into the soi up ahead."
+  },
+  {
+    "id": "th-090",
+    "thai": "กลับรถ",
+    "roman": "glàp rót",
+    "meaning": "Make a U-turn",
+    "toneClass": "high",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "เลยไปกลับรถใต้สะพาน",
+    "exampleMeaning": "Go further and make a U-turn under the bridge."
+  },
+  {
+    "id": "th-091",
+    "thai": "จอดที่นี่",
+    "roman": "jɔ̀ɔt thîi nîi",
+    "meaning": "Stop here / Drop me off here",
+    "toneClass": "falling",
+    "tags": [
+      "transit",
+      "taxi"
+    ],
+    "example": "จอดที่นี่ได้เลยครับ ขอบคุณครับ",
+    "exampleMeaning": "You can drop me right here, thank you."
+  },
+  {
+    "id": "th-092",
+    "thai": "จอดข้างหน้า",
+    "roman": "jɔ̀ɔt khâang nâa",
+    "meaning": "Stop just ahead",
+    "toneClass": "falling",
+    "tags": [
+      "transit",
+      "taxi"
+    ],
+    "example": "จอดตรงหน้าเซเว่นข้างหน้านะครับ",
+    "exampleMeaning": "Stop in front of the 7-Eleven up ahead."
+  },
+  {
+    "id": "th-093",
+    "thai": "สี่แยก",
+    "roman": "sìi yâek",
+    "meaning": "Crossroads / 4-way intersection",
+    "toneClass": "falling",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "ไฟแดงตรงสี่แยกรอนานมาก",
+    "exampleMeaning": "The red light at the 4-way intersection takes forever."
+  },
+  {
+    "id": "th-094",
+    "thai": "สามแยก",
+    "roman": "sǎam yâek",
+    "meaning": "T-junction / 3-way fork",
+    "toneClass": "falling",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "เจอสามแยกแล้วเลี้ยวขวา",
+    "exampleMeaning": "When you hit the T-junction, turn right."
+  },
+  {
+    "id": "th-095",
+    "thai": "ซอย",
+    "roman": "sɔɔi",
+    "meaning": "Side-street / Alleyway",
+    "toneClass": "mid",
+    "tags": [
+      "transit",
+      "bangkok"
+    ],
+    "example": "คอนโดผมอยู่ในซอยลึกนิดหน่อย",
+    "exampleMeaning": "My condo is a bit deep inside the soi."
+  },
+  {
+    "id": "th-096",
+    "thai": "ปากซอย",
+    "roman": "bpàak sɔɔi",
+    "meaning": "Entrance / mouth of the soi",
+    "toneClass": "mid",
+    "tags": [
+      "transit",
+      "bangkok"
+    ],
+    "example": "จอดส่งตรงปากซอยก็พอครับ",
+    "exampleMeaning": "Dropping me off at the mouth of the soi is fine."
+  },
+  {
+    "id": "th-097",
+    "thai": "ท้ายซอย",
+    "roman": "tháai sɔɔi",
+    "meaning": "Deep end / back of the soi",
+    "toneClass": "mid",
+    "tags": [
+      "transit",
+      "bangkok"
+    ],
+    "example": "ร้านอาหารอยู่สุดท้ายซอย",
+    "exampleMeaning": "The restaurant is at the very end of the soi."
+  },
+  {
+    "id": "th-098",
+    "thai": "ขึ้นทางด่วน",
+    "roman": "khʉ̂n thaang-dùan",
+    "meaning": "Take the expressway / tollway",
+    "toneClass": "low",
+    "tags": [
+      "transit",
+      "taxi"
+    ],
+    "example": "ขึ้นทางด่วนเลยครับ เดี๋ยวจ่ายค่าผ่านทางเอง",
+    "exampleMeaning": "Take the tollway, I will pay the toll fees."
+  },
+  {
+    "id": "th-099",
+    "thai": "ไม่ขึ้นทางด่วน",
+    "roman": "mâi khʉ̂n thaang-dùan",
+    "meaning": "Don't take the expressway (Local roads)",
+    "toneClass": "low",
+    "tags": [
+      "transit",
+      "taxi"
+    ],
+    "example": "ไม่รีบ ไม่ขึ้นทางด่วนครับ",
+    "exampleMeaning": "I'm in no rush, don't take the tollway."
+  },
+  {
+    "id": "th-100",
+    "thai": "กดมิเตอร์ด้วย",
+    "roman": "gòt mí-dtə̂ə dûai",
+    "meaning": "Turn on the meter please (Anti-scam anchor)",
+    "toneClass": "falling",
+    "tags": [
+      "transit",
+      "taxi",
+      "survival"
+    ],
+    "example": "พี่ครับ ช่วยกดมิเตอร์ด้วยครับ",
+    "exampleMeaning": "Brother, please turn on the meter."
+  },
+  {
+    "id": "th-101",
+    "thai": "รีบไหม",
+    "roman": "rîip mái?",
+    "meaning": "Are you in a hurry?",
+    "toneClass": "high",
+    "tags": [
+      "transit",
+      "social"
+    ],
+    "example": "พี่รีบไหมครับ ถ้าไม่รีบแวะเติมน้ำมันก่อน",
+    "exampleMeaning": "Are you in a hurry? If not, mind if I get gas?"
+  },
+  {
+    "id": "th-102",
+    "thai": "รีบครับ",
+    "roman": "rîip khráp",
+    "meaning": "I'm in a hurry!",
+    "toneClass": "high",
+    "tags": [
+      "transit",
+      "survival"
+    ],
+    "example": "รีบครับ จะตกเครื่องบินแล้ว",
+    "exampleMeaning": "I am in a hurry, about to miss my flight!"
+  },
+  {
+    "id": "th-103",
+    "thai": "รถติดมาก",
+    "roman": "rót dtìt mâak",
+    "meaning": "Heavy traffic / Traffic jam",
+    "toneClass": "falling",
+    "tags": [
+      "transit",
+      "bangkok"
+    ],
+    "example": "ช่วงเย็นวันศุกร์ รถติดมากจริงๆ",
+    "exampleMeaning": "On Friday evenings, traffic is truly jammed."
+  },
+  {
+    "id": "th-104",
+    "thai": "รถไฟฟ้า",
+    "roman": "rót fai-fáa",
+    "meaning": "BTS Skytrain / Electric train",
+    "toneClass": "high",
+    "tags": [
+      "transit",
+      "bangkok"
+    ],
+    "example": "นั่งรถไฟฟ้าไปสยามเร็วกว่า",
+    "exampleMeaning": "Taking the BTS to Siam is much faster."
+  },
+  {
+    "id": "th-105",
+    "thai": "สถานี",
+    "roman": "sà-thǎa-nii",
+    "meaning": "Station (Train/Bus)",
+    "toneClass": "mid",
+    "tags": [
+      "transit",
+      "bangkok"
+    ],
+    "example": "สถานีอโศก ทางออกสาม",
+    "exampleMeaning": "Asok Station, Exit 3."
+  },
+  {
+    "id": "th-106",
+    "thai": "มอเตอร์ไซค์วิน",
+    "roman": "mɔɔ-dtəə-sai win",
+    "meaning": "Motorbike taxi (Win)",
+    "toneClass": "mid",
+    "tags": [
+      "transit",
+      "bangkok"
+    ],
+    "example": "นั่งมอเตอร์ไซค์วินไปปากซอย ยี่สิบบาท",
+    "exampleMeaning": "Take the motorbike taxi to the soi entrance, 20 Baht."
+  },
+  {
+    "id": "th-107",
+    "thai": "ช้าๆ หน่อย",
+    "roman": "cháa-cháa nɔ̀ɔi",
+    "meaning": "A bit slower please (Safety command)",
+    "toneClass": "low",
+    "tags": [
+      "transit",
+      "safety"
+    ],
+    "example": "พี่ครับ ฝนตก ถนนลื่น ขี่ช้าๆ หน่อยครับ",
+    "exampleMeaning": "Driver, it's raining and roads are slippery, drive slower please."
+  },
+  {
+    "id": "th-108",
+    "thai": "ถึงแล้ว",
+    "roman": "thʉ̌ng láew",
+    "meaning": "We've arrived / Reached the destination",
+    "toneClass": "high",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "ถึงแล้วครับ หน้าตึกพอดี",
+    "exampleMeaning": "We have arrived, right in front of the building."
+  },
+  {
+    "id": "th-109",
+    "thai": "สะพานลอย",
+    "roman": "sà-phaan lɔɔi",
+    "meaning": "Pedestrian overpass / Footbridge",
+    "toneClass": "mid",
+    "tags": [
+      "transit",
+      "landmarks"
+    ],
+    "example": "เดินข้ามสะพานลอยไปฝั่งตรงข้าม",
+    "exampleMeaning": "Walk across the footbridge to the other side."
+  },
+  {
+    "id": "th-110",
+    "thai": "ป้ายรถเมล์",
+    "roman": "bpâai rót mee",
+    "meaning": "Bus stop",
+    "toneClass": "mid",
+    "tags": [
+      "transit",
+      "landmarks"
+    ],
+    "example": "รออยู่ที่ป้ายรถเมล์หน้าห้าง",
+    "exampleMeaning": "Waiting at the bus stop in front of the mall."
+  },
+  {
+    "id": "th-111",
+    "thai": "ทางออก",
+    "roman": "thaang ɔ̀ɔk",
+    "meaning": "Exit",
+    "toneClass": "low",
+    "tags": [
+      "transit",
+      "signs"
+    ],
+    "example": "ทางออกหมายเลขสอง",
+    "exampleMeaning": "Exit number two."
+  },
+  {
+    "id": "th-112",
+    "thai": "ทางเข้า",
+    "roman": "thaang khâo",
+    "meaning": "Entrance",
+    "toneClass": "falling",
+    "tags": [
+      "transit",
+      "signs"
+    ],
+    "example": "ทางเข้าลานจอดรถอยู่ด้านหลัง",
+    "exampleMeaning": "The entrance to the parking lot is around back."
+  },
+  {
+    "id": "th-113",
+    "thai": "ฝั่งตรงข้าม",
+    "roman": "fàng dtrong khâam",
+    "meaning": "Opposite side of the street",
+    "toneClass": "falling",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "ต้องข้ามถนนไปฝั่งตรงข้าม",
+    "exampleMeaning": "Need to cross the road to the opposite side."
+  },
+  {
+    "id": "th-114",
+    "thai": "ไกลไหม",
+    "roman": "glai mái?",
+    "meaning": "Is it far?",
+    "toneClass": "high",
+    "tags": [
+      "transit",
+      "questions"
+    ],
+    "example": "เดินไปจากที่นี่ ไกลไหมครับ",
+    "exampleMeaning": "Walking from here, is it far?"
+  },
+  {
+    "id": "th-115",
+    "thai": "ใกล้ๆ",
+    "roman": "glâi-glâi",
+    "meaning": "Very close / Nearby",
+    "toneClass": "falling",
+    "tags": [
+      "transit",
+      "directions"
+    ],
+    "example": "อยู่ใกล้ๆ นี่เอง เดินสองนาทีถึง",
+    "exampleMeaning": "It's right nearby, just a 2-minute walk."
+  },
+  {
+    "id": "th-116",
+    "thai": "น่ารักมาก",
+    "roman": "nâa-rák mâak",
+    "meaning": "Very cute / Incredibly charming",
+    "toneClass": "high",
+    "tags": [
+      "charm",
+      "social"
+    ],
+    "example": "รอยยิ้มเธอน่ารักมาก",
+    "exampleMeaning": "Your smile is so cute."
+  },
+  {
+    "id": "th-117",
+    "thai": "ยิ้มสวยจัง",
+    "roman": "yím sǔai jang",
+    "meaning": "You have such a beautiful smile",
+    "toneClass": "rising",
+    "tags": [
+      "charm",
+      "flirt"
+    ],
+    "example": "ชอบเวลาเธอยิ้ม ยิ้มสวยจัง",
+    "exampleMeaning": "I love when you smile, such a lovely smile."
+  },
+  {
+    "id": "th-118",
+    "thai": "พูดเล่น",
+    "roman": "phûut lên",
+    "meaning": "Just kidding / Teasing",
+    "toneClass": "falling",
+    "tags": [
+      "charm",
+      "banter"
+    ],
+    "example": "อย่าโกรธนะ แค่พูดเล่นเฉยๆ",
+    "exampleMeaning": "Don't be mad, I was just teasing."
+  },
+  {
+    "id": "th-119",
+    "thai": "ล้อเล่น",
+    "roman": "lɔ́ɔ lên",
+    "meaning": "Joking around / Messing with you",
+    "toneClass": "falling",
+    "tags": [
+      "charm",
+      "banter"
+    ],
+    "example": "ล้อเล่นน่า ทำหน้าซีเรียสไปได้",
+    "exampleMeaning": "Just messing with you, no need to look so serious!"
+  },
+  {
+    "id": "th-120",
+    "thai": "จริงเหรอ",
+    "roman": "jring rə̌ə?",
+    "meaning": "Really? / For real?",
+    "toneClass": "rising",
+    "tags": [
+      "charm",
+      "social",
+      "reactions"
+    ],
+    "example": "จริงเหรอ ไม่น่าเชื่อเลย",
+    "exampleMeaning": "Really? That is unbelievable!"
+  },
+  {
+    "id": "th-121",
+    "thai": "เท่มาก",
+    "roman": "thêe mâak",
+    "meaning": "Super cool / Stylish / Badass",
+    "toneClass": "falling",
+    "tags": [
+      "charm",
+      "compliments"
+    ],
+    "example": "วันนี้แต่งตัวเท่มาก เข้ากับสไตล์นายเลย",
+    "exampleMeaning": "Dressed super cool today, totally fits your style."
+  },
+  {
+    "id": "th-122",
+    "thai": "เก่งจัง",
+    "roman": "gèng jang",
+    "meaning": "So skilled! / So impressive!",
+    "toneClass": "mid",
+    "tags": [
+      "charm",
+      "compliments"
+    ],
+    "example": "พูดไทยเก่งจัง เรียนมานานหรือยัง",
+    "exampleMeaning": "Your Thai is so good! Have you studied long?"
+  },
+  {
+    "id": "th-123",
+    "thai": "มีแฟนหรือยัง",
+    "roman": "mii faaen rʉ̌ʉ yang?",
+    "meaning": "Do you have a partner / boyfriend / girlfriend?",
+    "toneClass": "rising",
+    "tags": [
+      "charm",
+      "flirt"
+    ],
+    "example": "คนน่ารักแบบนี้ มีแฟนหรือยังครับ",
+    "exampleMeaning": "Someone as cute as you, do you have a partner yet?"
+  },
+  {
+    "id": "th-124",
+    "thai": "ขอไลน์ได้ไหม",
+    "roman": "khɔ̌ɔ laai dâi mái?",
+    "meaning": "Can I have your LINE? (The Thai social lock)",
+    "toneClass": "high",
+    "tags": [
+      "charm",
+      "social"
+    ],
+    "example": "ถ้าไม่รังเกียจ ขอไลน์ไว้คุยกันได้ไหมครับ",
+    "exampleMeaning": "If you don't mind, can I add your LINE so we can chat?"
+  },
+  {
+    "id": "th-125",
+    "thai": "ไปดื่มกาแฟกันไหม",
+    "roman": "bpai dʉ̀ʉm gaa-faaae gan mái?",
+    "meaning": "Want to grab coffee together?",
+    "toneClass": "high",
+    "tags": [
+      "charm",
+      "dates"
+    ],
+    "example": "บ่ายนี้ว่างไหม ไปดื่มกาแฟกันไหมครับ",
+    "exampleMeaning": "Free this afternoon? Want to grab a coffee?"
+  },
+  {
+    "id": "th-126",
+    "thai": "ชอบมาก",
+    "roman": "chɔ̂ɔp mâak",
+    "meaning": "I like it a lot / Really fond of it",
+    "toneClass": "falling",
+    "tags": [
+      "charm",
+      "feelings"
+    ],
+    "example": "กาแฟร้านนี้ บรรยากาศดี ชอบมาก",
+    "exampleMeaning": "This cafe has great vibes, I really like it."
+  },
+  {
+    "id": "th-127",
+    "thai": "ไม่ธรรมดา",
+    "roman": "mâi tham-má-daa",
+    "meaning": "Not ordinary / Exceptional / Out of the ordinary",
+    "toneClass": "mid",
+    "tags": [
+      "charm",
+      "praise"
+    ],
+    "example": "ฝีมือต่อยเตะไม่ธรรมดาเลยนะ",
+    "exampleMeaning": "Your sparring skill is truly out of the ordinary."
+  },
+  {
+    "id": "th-128",
+    "thai": "สุดยอด",
+    "roman": "sùt yɔ̂ɔt",
+    "meaning": "Awesome / Top tier / Superb!",
+    "toneClass": "falling",
+    "tags": [
+      "charm",
+      "slang"
+    ],
+    "example": "คอนเสิร์ตเมื่อคืน สุดยอดไปเลย",
+    "exampleMeaning": "The concert last night was top tier!"
+  },
+  {
+    "id": "th-129",
+    "thai": "ใจเย็นๆ",
+    "roman": "jai yen-yen",
+    "meaning": "Calm down / Chill / Keep cool",
+    "toneClass": "mid",
+    "tags": [
+      "charm",
+      "mindset"
+    ],
+    "example": "ค่อยๆ คิด ใจเย็นๆ ไม่ต้องรีบ",
+    "exampleMeaning": "Think it over slowly, stay cool, no rush."
+  },
+  {
+    "id": "th-130",
+    "thai": "คิดถึงนะ",
+    "roman": "khít thʉ̌ng ná",
+    "meaning": "Thinking of you / Miss you",
+    "toneClass": "high",
+    "tags": [
+      "charm",
+      "flirt"
+    ],
+    "example": "ไม่ได้เจอกันหลายวัน คิดถึงนะ",
+    "exampleMeaning": "Haven't seen you in days, thinking of you."
+  },
+  {
+    "id": "th-131",
+    "thai": "ยินดีที่ได้รู้จัก",
+    "roman": "yin-dii thîi dâi róo-jàk",
+    "meaning": "Pleasure to meet you",
+    "toneClass": "low",
+    "tags": [
+      "charm",
+      "greetings"
+    ],
+    "example": "ยินดีที่ได้รู้จักครับ ผมชื่อปิยะวี",
+    "exampleMeaning": "Nice to meet you, my name is Piyavi."
+  },
+  {
+    "id": "th-132",
+    "thai": "แล้วเจอกัน",
+    "roman": "láew jəə gan",
+    "meaning": "See you later / Catch you soon",
+    "toneClass": "mid",
+    "tags": [
+      "charm",
+      "goodbye"
+    ],
+    "example": "วันนี้ต้องไปก่อน แล้วเจอกันใหม่นะ",
+    "exampleMeaning": "Got to run today, catch you again soon."
+  },
+  {
+    "id": "th-133",
+    "thai": "ดูดีมาก",
+    "roman": "duu dii mâak",
+    "meaning": "Looking very sharp / Looks great!",
+    "toneClass": "falling",
+    "tags": [
+      "charm",
+      "compliments"
+    ],
+    "example": "สูทตัวนี้ใส่แล้วดูดีมาก",
+    "exampleMeaning": "Wearing this suit, you look very sharp."
+  },
+  {
+    "id": "th-134",
+    "thai": "มีเสน่ห์",
+    "roman": "mii sà-nèe",
+    "meaning": "Charismatic / Alluring / Has magnetism",
+    "toneClass": "low",
+    "tags": [
+      "charm",
+      "personality"
+    ],
+    "example": "เธอเป็นคนพูดจามีเสน่ห์มาก",
+    "exampleMeaning": "She has such a charismatic way of speaking."
+  },
+  {
+    "id": "th-135",
+    "thai": "แกล้งกันหรือเปล่า",
+    "roman": "glâaeng gan rʉ̌ʉ bplào?",
+    "meaning": "Are you messing with me? / Teasing me?",
+    "toneClass": "low",
+    "tags": [
+      "charm",
+      "banter"
+    ],
+    "example": "ชมขนาดนี้ แกล้งกันหรือเปล่าเนี่ย",
+    "exampleMeaning": "Praising me like this, are you messing with me?"
+  },
+  {
+    "id": "th-136",
+    "thai": "ว่างไหม",
+    "roman": "wâang mái?",
+    "meaning": "Are you free?",
+    "toneClass": "high",
+    "tags": [
+      "charm",
+      "social"
+    ],
+    "example": "สุดสัปดาห์นี้พอมีเวลาว่างไหมครับ",
+    "exampleMeaning": "Do you have any free time this weekend?"
+  },
+  {
+    "id": "th-137",
+    "thai": "รู้สึกดี",
+    "roman": "róo-sʉ̀k dii",
+    "meaning": "Feels good / Good mood",
+    "toneClass": "mid",
+    "tags": [
+      "charm",
+      "feelings"
+    ],
+    "example": "ได้มาเดินเล่นแถวนี้แล้วรู้สึกดีจัง",
+    "exampleMeaning": "Walking around here makes me feel so good."
+  },
+  {
+    "id": "th-138",
+    "thai": "สนุกมาก",
+    "roman": "sà-nùk mâak",
+    "meaning": "Super fun! / Had a blast",
+    "toneClass": "falling",
+    "tags": [
+      "charm",
+      "social"
+    ],
+    "example": "ปาร์ตี้เมื่อคืนสนุกมาก ขอบคุณที่ชวนนะ",
+    "exampleMeaning": "The party last night was super fun, thanks for inviting me."
+  },
+  {
+    "id": "th-139",
+    "thai": "สบายใจ",
+    "roman": "sà-baai jai",
+    "meaning": "At ease / Peaceful mind / Relaxed",
+    "toneClass": "mid",
+    "tags": [
+      "charm",
+      "feelings"
+    ],
+    "example": "คุยกับนายแล้วรู้สึกสบายใจดี",
+    "exampleMeaning": "Talking to you makes me feel so at ease."
+  },
+  {
+    "id": "th-140",
+    "thai": "ไว้คุยกันใหม่",
+    "roman": "wái khui gan mài",
+    "meaning": "Let's talk again soon",
+    "toneClass": "low",
+    "tags": [
+      "charm",
+      "goodbye"
+    ],
+    "example": "ดึกแล้ว ไปพักผ่อนเถอะ ไว้คุยกันใหม่",
+    "exampleMeaning": "It's late, get some rest, let's chat again soon."
+  },
+  {
+    "id": "th-141",
+    "thai": "อันนี้เท่าไหร่",
+    "roman": "an níi thâo-rài?",
+    "meaning": "How much is this one?",
+    "toneClass": "low",
+    "tags": [
+      "shopping",
+      "street"
+    ],
+    "example": "พี่ครับ เสื้อตัวนี้อันนี้เท่าไหร่ครับ",
+    "exampleMeaning": "Brother, how much is this shirt?"
+  },
+  {
+    "id": "th-142",
+    "thai": "ลดได้ไหม",
+    "roman": "lót dâi mái?",
+    "meaning": "Can you give a discount? (Golden street lever)",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "charm"
+    ],
+    "example": "สามร้อยบาท ลดได้ไหมครับ",
+    "exampleMeaning": "300 Baht, can you give a discount?"
+  },
+  {
+    "id": "th-143",
+    "thai": "แพงไปหน่อย",
+    "roman": "phaaeng bpai nɔ̀ɔi",
+    "meaning": "A bit too expensive",
+    "toneClass": "low",
+    "tags": [
+      "shopping",
+      "street"
+    ],
+    "example": "สวยดีนะ แต่ราคาแพงไปหน่อย",
+    "exampleMeaning": "It looks nice, but the price is a bit high."
+  },
+  {
+    "id": "th-144",
+    "thai": "สองร้อยได้ไหม",
+    "roman": "sɔ̌ɔng rɔ́ɔi dâi mái?",
+    "meaning": "Can you do 200 Baht?",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "street"
+    ],
+    "example": "สองร้อยห้าสิบ ลดเหลือสองร้อยได้ไหมครับ",
+    "exampleMeaning": "From 250, can you do 200 Baht?"
+  },
+  {
+    "id": "th-145",
+    "thai": "ซื้อสองตัวลดได้ไหม",
+    "roman": "sʉ́ʉ sɔ̌ɔng dtua lót dâi mái?",
+    "meaning": "If I buy two, can you discount?",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "street"
+    ],
+    "example": "ชอบทั้งสองสี ซื้อสองตัวลดได้ไหมครับ",
+    "exampleMeaning": "I like both colors. Buy two, can you discount?"
+  },
+  {
+    "id": "th-146",
+    "thai": "ราคาสุดท้ายเท่าไหร่",
+    "roman": "raa-khaa sùt tháai thâo-rài?",
+    "meaning": "What is your best / final price?",
+    "toneClass": "low",
+    "tags": [
+      "shopping",
+      "street"
+    ],
+    "example": "พ่อค้าให้ได้ราคาสุดท้ายเท่าไหร่ครับ",
+    "exampleMeaning": "Boss, what's the absolute best final price you can do?"
+  },
+  {
+    "id": "th-147",
+    "thai": "มีไซส์อื่นไหม",
+    "roman": "mii sai ʉ̀ʉn mái?",
+    "meaning": "Do you have other sizes?",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "clothes"
+    ],
+    "example": "ตัวนี้เล็กไป มีไซส์อื่นไหมครับ",
+    "exampleMeaning": "This is too small, do you have other sizes?"
+  },
+  {
+    "id": "th-148",
+    "thai": "ไซส์ใหญ่กว่านี้",
+    "roman": "sai yài gwàa níi",
+    "meaning": "A size bigger than this",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "clothes"
+    ],
+    "example": "ขอไซส์ใหญ่กว่านี้เบอร์หนึ่งครับ",
+    "exampleMeaning": "I need one size bigger than this please."
+  },
+  {
+    "id": "th-149",
+    "thai": "ลองได้ไหม",
+    "roman": "lɔɔng dâi mái?",
+    "meaning": "Can I try it on?",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "clothes"
+    ],
+    "example": "กางเกงตัวนี้ ขอเอาไปลองได้ไหมครับ",
+    "exampleMeaning": "These pants, can I try them on?"
+  },
+  {
+    "id": "th-150",
+    "thai": "สแกนจ่ายได้ไหม",
+    "roman": "sà-gaaen jàai dâi mái?",
+    "meaning": "Can I scan to pay? (PromptPay / QR)",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "banking"
+    ],
+    "example": "ไม่มีเงินสด สแกนจ่ายได้ไหมครับ",
+    "exampleMeaning": "No cash on me, can I scan QR code to pay?"
+  },
+  {
+    "id": "th-151",
+    "thai": "รับเงินสดไหม",
+    "roman": "ráp ngoen sòt mái?",
+    "meaning": "Do you accept cash?",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "banking"
+    ],
+    "example": "แบงก์พัน รับเงินสดไหมครับ",
+    "exampleMeaning": "1,000 Baht bill, do you take cash?"
+  },
+  {
+    "id": "th-152",
+    "thai": "มีทอนไหม",
+    "roman": "mii thɔɔn mái?",
+    "meaning": "Do you have change? (Breaking large bills)",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "banking"
+    ],
+    "example": "มีแบงก์พัน มีเงินทอนไหมครับ",
+    "exampleMeaning": "I only have a 1,000 note, do you have change?"
+  },
+  {
+    "id": "th-153",
+    "thai": "ไม่เอาครับ",
+    "roman": "mâi ao khráp",
+    "meaning": "No thank you / I'll pass (Firm polite exit)",
+    "toneClass": "falling",
+    "tags": [
+      "shopping",
+      "survival"
+    ],
+    "example": "ขอบคุณครับ ไม่เอาครับ",
+    "exampleMeaning": "Thank you, but I'll pass."
+  },
+  {
+    "id": "th-154",
+    "thai": "ขอคิดดูก่อน",
+    "roman": "khɔ̌ɔ khít duu gɔ̀ɔn",
+    "meaning": "Let me think about it first (Gentle stall)",
+    "toneClass": "low",
+    "tags": [
+      "shopping",
+      "charm"
+    ],
+    "example": "ชอบนะ แต่ขอเดินดูแล้วคิดดูก่อนครับ",
+    "exampleMeaning": "I like it, but let me walk around and think about it first."
+  },
+  {
+    "id": "th-155",
+    "thai": "เอาตัวนี้",
+    "roman": "ao dtua níi",
+    "meaning": "I will buy this one!",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "clothes"
+    ],
+    "example": "ตัดสินใจแล้ว เอาตัวนี้ครับ ใส่ถุงเลย",
+    "exampleMeaning": "I've decided, I'll take this one. Bag it up!"
+  },
+  {
+    "id": "th-156",
+    "thai": "สวยดี",
+    "roman": "sǔai dii",
+    "meaning": "Looks nice / Pretty",
+    "toneClass": "mid",
+    "tags": [
+      "shopping",
+      "compliments"
+    ],
+    "example": "สร้อยข้อมือเส้นนี้ งานฝีมือสวยดี",
+    "exampleMeaning": "This bracelet has really nice craftsmanship."
+  },
+  {
+    "id": "th-157",
+    "thai": "ของแท้ไหม",
+    "roman": "khɔ̌ɔng tháae mái?",
+    "meaning": "Is it genuine / authentic?",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "quality"
+    ],
+    "example": "รองเท้าคู่นี้ ของแท้ไหมครับ",
+    "exampleMeaning": "These sneakers, are they authentic?"
+  },
+  {
+    "id": "th-158",
+    "thai": "มีสีอื่นไหม",
+    "roman": "mii sǐi ʉ̀ʉn mái?",
+    "meaning": "Do you have other colors?",
+    "toneClass": "high",
+    "tags": [
+      "shopping",
+      "clothes"
+    ],
+    "example": "แบบนี้มีสีดำหรือสีกรมไหมครับ",
+    "exampleMeaning": "In this model, do you have black or navy?"
+  },
+  {
+    "id": "th-159",
+    "thai": "ขอใบเสร็จด้วย",
+    "roman": "khɔ̌ɔ bai sèt dûai",
+    "meaning": "Receipt please",
+    "toneClass": "falling",
+    "tags": [
+      "shopping",
+      "admin"
+    ],
+    "example": "ขอใบเสร็จรับเงินด้วยนะครับ",
+    "exampleMeaning": "May I have the official receipt please?"
+  },
+  {
+    "id": "th-160",
+    "thai": "ของฝาก",
+    "roman": "khɔ̌ɔng fàak",
+    "meaning": "Souvenir / Gift for people back home",
+    "toneClass": "low",
+    "tags": [
+      "shopping",
+      "culture"
+    ],
+    "example": "ซื้อผลไม้อบแห้งเป็นของฝากเพื่อน",
+    "exampleMeaning": "Buying dried fruit as souvenirs for friends."
+  },
+  {
+    "id": "th-161",
+    "thai": "เวฟไหม",
+    "roman": "wéep mái?",
+    "meaning": "Do you want it microwaved? (7-Eleven cashier question)",
+    "toneClass": "high",
+    "tags": [
+      "logistics",
+      "7eleven"
+    ],
+    "example": "ข้าวกล่องนี้ เวฟไหมคะ",
+    "exampleMeaning": "This lunch box, should I microwave it?"
+  },
+  {
+    "id": "th-162",
+    "thai": "เวฟครับ",
+    "roman": "wéep khráp",
+    "meaning": "Yes, please microwave it",
+    "toneClass": "high",
+    "tags": [
+      "logistics",
+      "7eleven"
+    ],
+    "example": "เวฟครับ ทานเลยครับ",
+    "exampleMeaning": "Microwave it please, I'll eat it right away."
+  },
+  {
+    "id": "th-163",
+    "thai": "ไม่เวฟ",
+    "roman": "mâi wéep",
+    "meaning": "No need to microwave",
+    "toneClass": "high",
+    "tags": [
+      "logistics",
+      "7eleven"
+    ],
+    "example": "ไม่เวฟครับ เดี๋ยวเอาไปเวฟที่ห้อง",
+    "exampleMeaning": "No microwave, I'll heat it in my room."
+  },
+  {
+    "id": "th-164",
+    "thai": "รับถุงไหม",
+    "roman": "ráp thǔng mái?",
+    "meaning": "Do you want a plastic bag?",
+    "toneClass": "high",
+    "tags": [
+      "logistics",
+      "7eleven"
+    ],
+    "example": "สินค้าสามชิ้น รับถุงไหมคะ",
+    "exampleMeaning": "3 items, would you like a bag?"
+  },
+  {
+    "id": "th-165",
+    "thai": "ไม่รับถุง",
+    "roman": "mâi ráp thǔng",
+    "meaning": "No bag needed (Eco response)",
+    "toneClass": "rising",
+    "tags": [
+      "logistics",
+      "7eleven"
+    ],
+    "example": "ใส่กระเป๋าเป้แล้ว ไม่รับถุงครับ",
+    "exampleMeaning": "I put it in my backpack, no bag needed."
+  },
+  {
+    "id": "th-166",
+    "thai": "มีหลอดไหม",
+    "roman": "mii lɔ̀ɔt mái?",
+    "meaning": "Do you have a straw?",
+    "toneClass": "high",
+    "tags": [
+      "logistics",
+      "7eleven"
+    ],
+    "example": "ขอน้ำอัดลม แล้วมีหลอดไหมครับ",
+    "exampleMeaning": "I bought soda, do you have a straw?"
+  },
+  {
+    "id": "th-167",
+    "thai": "ช้อนส้อม",
+    "roman": "chɔ́ɔn sɔ̂ɔm",
+    "meaning": "Spoon and fork (Cutlery)",
+    "toneClass": "falling",
+    "tags": [
+      "logistics",
+      "7eleven"
+    ],
+    "example": "ขอช้อนส้อมพลาสติกสองคู่ครับ",
+    "exampleMeaning": "Two pairs of plastic spoons and forks please."
+  },
+  {
+    "id": "th-168",
+    "thai": "ปวดหัว",
+    "roman": "bpùat hǔa",
+    "meaning": "Headache",
+    "toneClass": "rising",
+    "tags": [
+      "logistics",
+      "pharmacy",
+      "health"
+    ],
+    "example": "รู้สึกปวดหัวตั้งแต่เช้า",
+    "exampleMeaning": "I've had a headache since morning."
+  },
+  {
+    "id": "th-169",
+    "thai": "ปวดท้อง",
+    "roman": "bpùat thɔ́ɔng",
+    "meaning": "Stomach ache / Abdominal pain",
+    "toneClass": "high",
+    "tags": [
+      "logistics",
+      "pharmacy",
+      "health"
+    ],
+    "example": "กินของเผ็ดแล้วปวดท้องมาก",
+    "exampleMeaning": "Ate spicy food and my stomach is hurting badly."
+  },
+  {
+    "id": "th-170",
+    "thai": "เป็นไข้",
+    "roman": "bpen khâi",
+    "meaning": "Have a fever",
+    "toneClass": "falling",
+    "tags": [
+      "logistics",
+      "pharmacy",
+      "health"
+    ],
+    "example": "ตัวร้อนมาก เหมือนจะเป็นไข้",
+    "exampleMeaning": "My body is hot, seems like I have a fever."
+  },
+  {
+    "id": "th-171",
+    "thai": "เจ็บคอ",
+    "roman": "jèp khɔɔ",
+    "meaning": "Sore throat",
+    "toneClass": "mid",
+    "tags": [
+      "logistics",
+      "pharmacy",
+      "health"
+    ],
+    "example": "กลืนน้ำลายแล้วเจ็บคอมาก",
+    "exampleMeaning": "Swallowing hurts my throat a lot."
+  },
+  {
+    "id": "th-172",
+    "thai": "ยาแก้ปวด",
+    "roman": "yaa gâae bpùat",
+    "meaning": "Painkiller / Paracetamol",
+    "toneClass": "low",
+    "tags": [
+      "logistics",
+      "pharmacy"
+    ],
+    "example": "ขอยาแก้ปวดพาราเซตามอลหนึ่งแผงครับ",
+    "exampleMeaning": "One blister pack of paracetamol please."
+  },
+  {
+    "id": "th-173",
+    "thai": "ยาแก้แพ้",
+    "roman": "yaa gâae pháae",
+    "meaning": "Antihistamine / Allergy medicine",
+    "toneClass": "high",
+    "tags": [
+      "logistics",
+      "pharmacy"
+    ],
+    "example": "แพ้ฝุ่น มีน้ำมูก ขอยาแก้แพ้หน่อย",
+    "exampleMeaning": "Dust allergy and runny nose, need allergy medicine."
+  },
+  {
+    "id": "th-174",
+    "thai": "ท้องเสีย",
+    "roman": "thɔ́ɔng sǐa",
+    "meaning": "Diarrhea / Food poisoning symptom",
+    "toneClass": "rising",
+    "tags": [
+      "logistics",
+      "pharmacy",
+      "health"
+    ],
+    "example": "เข้าห้องน้ำหลายรอบ สงสัยจะท้องเสีย",
+    "exampleMeaning": "Went to bathroom multiple times, must have diarrhea."
+  },
+  {
+    "id": "th-175",
+    "thai": "ร้านขายยาอยู่ที่ไหน",
+    "roman": "ráan khǎai yaa yùu thîi nǎi?",
+    "meaning": "Where is the pharmacy?",
+    "toneClass": "rising",
+    "tags": [
+      "logistics",
+      "pharmacy",
+      "survival"
+    ],
+    "example": "แถวนี้มีร้านขายยาอยู่ที่ไหนบ้างครับ",
+    "exampleMeaning": "Around here, where is there a pharmacy?"
+  },
+  {
+    "id": "th-176",
+    "thai": "แอร์เสีย",
+    "roman": "aaae sǐa",
+    "meaning": "Air conditioner is broken (Condo issue)",
+    "toneClass": "rising",
+    "tags": [
+      "logistics",
+      "condo"
+    ],
+    "example": "แอร์ที่ห้องเปิดไม่ติด แอร์เสียครับ",
+    "exampleMeaning": "AC in the room won't turn on, it's broken."
+  },
+  {
+    "id": "th-177",
+    "thai": "น้ำไม่ไหล",
+    "roman": "nám mâi lǎi",
+    "meaning": "Water is not running / No water",
+    "toneClass": "rising",
+    "tags": [
+      "logistics",
+      "condo"
+    ],
+    "example": "ช่วยส่งช่างมาดูหน่อย น้ำไม่ไหลครับ",
+    "exampleMeaning": "Please send a technician, the water isn't running."
+  },
+  {
+    "id": "th-178",
+    "thai": "อินเทอร์เน็ตหลุด",
+    "roman": "in-təə-nèt lùt",
+    "meaning": "Internet disconnected / WiFi down",
+    "toneClass": "low",
+    "tags": [
+      "logistics",
+      "tech"
+    ],
+    "example": "ไวไฟที่ห้องใช้ไม่ได้ อินเทอร์เน็ตหลุดบ่อยมาก",
+    "exampleMeaning": "Room WiFi isn't working, internet drops constantly."
+  },
+  {
+    "id": "th-179",
+    "thai": "ซิมการ์ด",
+    "roman": "sim gàat",
+    "meaning": "SIM card (Mobile data)",
+    "toneClass": "low",
+    "tags": [
+      "logistics",
+      "telecom"
+    ],
+    "example": "ต้องการซื้อซิมการ์ดอินเทอร์เน็ตอันลิมิต",
+    "exampleMeaning": "I want to buy an unlimited data SIM card."
+  },
+  {
+    "id": "th-180",
+    "thai": "เติมเงิน",
+    "roman": "dtoem ngoen",
+    "meaning": "Top-up balance / Add credit",
+    "toneClass": "mid",
+    "tags": [
+      "logistics",
+      "telecom"
+    ],
+    "example": "เติมเงินมือถือหนึ่งร้อยบาทครับ",
+    "exampleMeaning": "Top-up mobile phone with 100 Baht please."
+  },
+  {
+    "id": "th-181",
+    "thai": "ซักผ้า",
+    "roman": "sák phâa",
+    "meaning": "Wash clothes / Do laundry",
+    "toneClass": "falling",
+    "tags": [
+      "logistics",
+      "home"
+    ],
+    "example": "ต้องเอาเสื้อซ้อมมวยไปซักผ้า",
+    "exampleMeaning": "Need to take my gym clothes to do laundry."
+  },
+  {
+    "id": "th-182",
+    "thai": "ร้านซักแห้ง",
+    "roman": "ráan sák hâaeng",
+    "meaning": "Dry cleaning shop",
+    "toneClass": "falling",
+    "tags": [
+      "logistics",
+      "services"
+    ],
+    "example": "ส่งสูทไปซักที่ร้านซักแห้ง",
+    "exampleMeaning": "Sent my suit to the dry cleaners."
+  },
+  {
+    "id": "th-183",
+    "thai": "ตู้เอทีเอ็ม",
+    "roman": "dtûu ee-thii-em",
+    "meaning": "ATM cash machine",
+    "toneClass": "mid",
+    "tags": [
+      "logistics",
+      "banking"
+    ],
+    "example": "ตู้เอทีเอ็มอยู่ข้างธนาคาร",
+    "exampleMeaning": "The ATM is right beside the bank."
+  },
+  {
+    "id": "th-184",
+    "thai": "พัสดุ",
+    "roman": "phát-sà-dù",
+    "meaning": "Package / Delivery parcel",
+    "toneClass": "low",
+    "tags": [
+      "logistics",
+      "condo"
+    ],
+    "example": "มีพัสดุมาส่งที่ล็อบบี้หรือยังครับ",
+    "exampleMeaning": "Has any delivery package arrived at the lobby?"
+  },
+  {
+    "id": "th-185",
+    "thai": "ฝากไว้ที่นิติ",
+    "roman": "fàak wái thîi ní-dtì",
+    "meaning": "Leave it with the condo juristic office",
+    "toneClass": "low",
+    "tags": [
+      "logistics",
+      "condo"
+    ],
+    "example": "ถ้าไม่มีคนอยู่ ฝากไว้ที่นิติบุคคลได้เลยครับ",
+    "exampleMeaning": "If no one is home, please leave it with the juristic office."
+  },
+  {
+    "id": "th-186",
+    "thai": "ใกล้",
+    "roman": "glâi (Falling Tone)",
+    "meaning": "NEAR / Close by (Do not confuse with ไกล = Far)",
+    "toneClass": "falling",
+    "tags": [
+      "tones",
+      "minimal-pair",
+      "transit"
+    ],
+    "example": "บ้านผมอยู่ใกล้บีทีเอส",
+    "exampleMeaning": "My place is near the BTS (Falling tone: glâi)."
+  },
+  {
+    "id": "th-187",
+    "thai": "ไกล",
+    "roman": "glai (Mid Tone)",
+    "meaning": "FAR away (Do not confuse with ใกล้ = Near)",
+    "toneClass": "mid",
+    "tags": [
+      "tones",
+      "minimal-pair",
+      "transit"
+    ],
+    "example": "สนามบินอยู่ไกลมาก",
+    "exampleMeaning": "The airport is very far (Mid tone: glai)."
+  },
+  {
+    "id": "th-188",
+    "thai": "ข้าว",
+    "roman": "khâao (Falling Tone)",
+    "meaning": "RICE / Food (Do not confuse with ขาว = White)",
+    "toneClass": "falling",
+    "tags": [
+      "tones",
+      "minimal-pair",
+      "food"
+    ],
+    "example": "กินข้าวหรือยังครับ",
+    "exampleMeaning": "Have you eaten rice/food yet? (Falling tone: khâao)."
+  },
+  {
+    "id": "th-189",
+    "thai": "ขาว",
+    "roman": "khǎao (Rising Tone)",
+    "meaning": "WHITE color (Do not confuse with ข้าว = Rice)",
+    "toneClass": "rising",
+    "tags": [
+      "tones",
+      "minimal-pair"
+    ],
+    "example": "เขาใส่เสื้อสีขาว",
+    "exampleMeaning": "He wears a white shirt (Rising tone: khǎao)."
+  },
+  {
+    "id": "th-190",
+    "thai": "ข่าว",
+    "roman": "khàao (Low Tone)",
+    "meaning": "NEWS / Information (Low tone)",
+    "toneClass": "low",
+    "tags": [
+      "tones",
+      "minimal-pair"
+    ],
+    "example": "ดูข่าวภาคค่ำ",
+    "exampleMeaning": "Watching the evening news (Low tone: khàao)."
+  },
+  {
+    "id": "th-191",
+    "thai": "ไม้",
+    "roman": "mái (High Tone)",
+    "meaning": "WOOD / Timber (High tone)",
+    "toneClass": "high",
+    "tags": [
+      "tones",
+      "minimal-pair"
+    ],
+    "example": "โต๊ะทำจากไม้สัก",
+    "exampleMeaning": "The table is made of teak wood (High tone: mái)."
+  },
+  {
+    "id": "th-192",
+    "thai": "ใหม่",
+    "roman": "mài (Low Tone)",
+    "meaning": "NEW (Low tone)",
+    "toneClass": "low",
+    "tags": [
+      "tones",
+      "minimal-pair"
+    ],
+    "example": "ซื้อโทรศัพท์เครื่องใหม่",
+    "exampleMeaning": "Bought a new phone (Low tone: mài)."
+  },
+  {
+    "id": "th-193",
+    "thai": "ไม่",
+    "roman": "mâi (Falling Tone)",
+    "meaning": "NO / NOT (Negative particle)",
+    "toneClass": "falling",
+    "tags": [
+      "tones",
+      "minimal-pair",
+      "core"
+    ],
+    "example": "ผมไม่กินเนื้อวัว",
+    "exampleMeaning": "I do not eat beef (Falling tone: mâi)."
+  },
+  {
+    "id": "th-194",
+    "thai": "ไหม",
+    "roman": "mǎi (Rising Tone)",
+    "meaning": "Question particle ('...or not?') / Silk",
+    "toneClass": "rising",
+    "tags": [
+      "tones",
+      "minimal-pair",
+      "core"
+    ],
+    "example": "ชอบไหมครับ",
+    "exampleMeaning": "Do you like it? (Rising tone: mǎi)."
+  },
+  {
+    "id": "th-195",
+    "thai": "เสือ",
+    "roman": "sʉ̌a (Rising Tone)",
+    "meaning": "TIGER (Do not confuse with เสื้อ = Shirt)",
+    "toneClass": "rising",
+    "tags": [
+      "tones",
+      "minimal-pair"
+    ],
+    "example": "เสือเป็นสัตว์ป่าดุร้าย",
+    "exampleMeaning": "The tiger is a fierce wild animal (Rising tone: sʉ̌a)."
+  },
+  {
+    "id": "th-196",
+    "thai": "เสื้อ",
+    "roman": "sʉ̂a (Falling Tone)",
+    "meaning": "SHIRT / Clothes (Do not confuse with เสือ = Tiger)",
+    "toneClass": "falling",
+    "tags": [
+      "tones",
+      "minimal-pair",
+      "shopping"
+    ],
+    "example": "เสื้อยืดตัวนี้เท่มาก",
+    "exampleMeaning": "This T-shirt is super cool (Falling tone: sʉ̂a)."
+  },
+  {
+    "id": "th-197",
+    "thai": "มา",
+    "roman": "maa (Mid Tone)",
+    "meaning": "COME (Do not confuse with หมา = Dog)",
+    "toneClass": "mid",
+    "tags": [
+      "tones",
+      "minimal-pair",
+      "core"
+    ],
+    "example": "มาหาผมที่นี่",
+    "exampleMeaning": "Come meet me here (Mid tone: maa)."
+  },
+  {
+    "id": "th-198",
+    "thai": "ม้า",
+    "roman": "máa (High Tone)",
+    "meaning": "HORSE (High tone)",
+    "toneClass": "high",
+    "tags": [
+      "tones",
+      "minimal-pair"
+    ],
+    "example": "ขี่ม้าในสนาม",
+    "exampleMeaning": "Riding a horse in the arena (High tone: máa)."
+  },
+  {
+    "id": "th-199",
+    "thai": "หมา",
+    "roman": "mǎa (Rising Tone)",
+    "meaning": "DOG (Rising tone - never mix with มา [come]!)",
+    "toneClass": "rising",
+    "tags": [
+      "tones",
+      "minimal-pair"
+    ],
+    "example": "หมาตัวนี้น่ารักมาก",
+    "exampleMeaning": "This dog is very cute (Rising tone: mǎa)."
+  },
+  {
+    "id": "th-200",
+    "thai": "สวย",
+    "roman": "sǔai (Rising Tone)",
+    "meaning": "BEAUTIFUL (Do not confuse with ซวย = Bad luck!)",
+    "toneClass": "rising",
+    "tags": [
+      "tones",
+      "minimal-pair",
+      "charm"
+    ],
+    "example": "วิวกรุงเทพฯ ยามค่ำคืนสวยมาก",
+    "exampleMeaning": "Bangkok's night view is very beautiful (Rising tone: sǔai)."
   }
 ]

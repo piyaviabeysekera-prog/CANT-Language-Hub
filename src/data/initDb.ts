@@ -3,10 +3,11 @@ import initialWords from './words.json';
 import { createNewCard } from './srs';
 
 export async function initializeDatabase() {
+  const words = initialWords as Word[];
   const wordCount = await db.words.count();
+
   if (wordCount === 0) {
     console.log('[+] Seeding initial words into Dexie IndexedDB...');
-    const words = initialWords as Word[];
     await db.words.bulkAdd(words);
 
     // Create starter SRS cards for each word
@@ -39,5 +40,33 @@ export async function initializeDatabase() {
     ]);
 
     console.log(`[+] Database seeded with ${words.length} words and ${cards.length} cards.`);
+  } else if (wordCount < words.length) {
+    // Incremental sync: Add any words from words.json that are missing in IndexedDB
+    console.log(`[+] Incremental sync: existing ${wordCount} words vs ${words.length} master words...`);
+    const existingWords = await db.words.toArray();
+    const existingIds = new Set(existingWords.map((w) => w.id));
+    const missingWords = words.filter((w) => !existingIds.has(w.id));
+
+    if (missingWords.length > 0) {
+      await db.words.bulkAdd(missingWords);
+
+      const newCards = [];
+      for (const w of missingWords) {
+        newCards.push(createNewCard(w.id, 'recognition'));
+        newCards.push(createNewCard(w.id, 'listening'));
+        newCards.push(createNewCard(w.id, 'reading'));
+        newCards.push(createNewCard(w.id, 'tone'));
+      }
+      await db.cards.bulkAdd(newCards);
+      console.log(`[+] Incremental sync added ${missingWords.length} new words and ${newCards.length} cards.`);
+    }
   }
+}
+
+export async function resetAndReseedDatabase() {
+  console.log('[!] Resetting Dexie database to full 200-phrase library...');
+  await db.words.clear();
+  await db.cards.clear();
+  await initializeDatabase();
+  console.log('[+] Reset and reseed complete.');
 }
